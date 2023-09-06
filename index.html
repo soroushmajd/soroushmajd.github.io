@@ -20,17 +20,44 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
 <head> <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito"> </head>
+<head>
+    <!-- ... other head content ... -->
+    <style>
+        .download-link {
+            border-bottom: 2px solid transparent;
+            display: inline-block;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 10px;
+            color: #1ba1e2;
+            transition: color 0.2s;
+        }
 
+        .download-link:hover {
+            color: #ff0000; /* Change this to the desired hover color */
+        }
+    </style>
+</head>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
     <style>
          @font-face {
-    font-family: Nunito;
-    src: url("./Nunito/Nunito-Regular.ttf") format('truetype');
-    font-weight: bold;
-    font-style: normal;
-        }
+font-family: Nunito;
+src: url("./Nunito/Nunito-Regular.ttf") format('truetype');
+}
+@font-face {
+font-family: Nunito;
+src: url("./Nunito/Nunito-Bold.ttf") format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: Nunito;
+src: url("./Nunito/Nunito-Italic.ttf") format('truetype');
+font-weight: normal;
+font-style: italic;
+}
         html,
         body,
         h1,
@@ -219,7 +246,7 @@
 
         <!-- Page Container -->
         <div class="w3-content w3-margin-top" style="max-width:1400px;">
-
+            
             <!-- The Grid -->
             <div class=" w3-container w3-card myName w3-round-large PageName">
                 <h1 class="myName w3-hover-opacity ">Seyed Soroush Majd</h1>
@@ -244,9 +271,6 @@
                                 <i class="fa fa-phone fa-fw w3-margin-right w3-large ii w3-hover-opacity"></i>live:.cid.4755cb9cfdd62c77 (skype)</p>
                             <hr>
                             <p class="w3-large">
-                            <!--
-                            <img class=" icon1 w3-hover-opacity" src="Skills.png"></img>
-                            -->
 
                             <b class="Title w3-hover-opacity">Skills</b>
                             </p>
@@ -254,37 +278,46 @@
                             <ul style="text-align: justify; text-justify: inter-word;">
                                 <li><b>Programming Languages:</b>
                                     <ul style="list-style-type:none">
-                                        <span>Python,&nbsp;</span>
-                                        <span>Matlab,&nbsp;</span>
-                                        <span>C++&nbsp;</span>
-                                        <span>SQL&nbsp;</span>
+                                        <span>Python,</span>
+                                        <span>Matlab,</span>
+                                        <span>C++,</span>
+                                        <span>SQL;</span>
                                                                                     
                                     </ul>
                                 </li>
                                 <li><b>AI and Data Science:</b>
                                     <ul style="list-style-type:none">
-                                        <span>PyTorch, &nbsp;</span>
-                                        <span>TensorFlow,&nbsp;</span>
-                                        <span>TensorFlow,&nbsp;</span>
-                                        <span>NumPy, &nbsp;</span>
-                                        <span>Scikit-Learn,&nbsp;</span>
-                                        <span>SciPy,&nbsp;</span>
+                                        <span>PyTorch, </span>
+                                        <span>TensorFlow, </span>
                                         
-                                        <span>Matplotlib, &nbsp;</span>
-                                        <span>Pandas, &nbsp;</span>
-                                        <span>OpenCV &nbsp;</span>
+                                        <span>NumPy, </span>
+                                        <span>Scikit-Learn, </span>
+                                        
+                                        
+                                        <span>Matplotlib, </span>
+                                        <span>Pandas, </span>
+                                        <span>PyTorch Metric Learning;</span>
 
 
+                                    </ul>
+                                </li>
+                                <li><b>Web Developement:</b>
+                                    <ul style="list-style-type:none">
+                                                                               
+                                        <span>HTML, </span>
+                                        <span>CSS;</span>
+                                        
+                                                                                
                                     </ul>
                                 </li>
                                 <li><b>Hardware:</b>
                                     <ul style="list-style-type:none">
                                                                                
-                                        <span>Proteus,&nbsp;</span>
-                                        <span>Arduino,&nbsp;</span>
-                                        <span>Assembly,&nbsp;</span>
-                                        <span>Cuda,&nbsp;</span>
-                                        <span>Verilog&nbsp;</span>
+                                        <span>Proteus, </span>
+                                        <span>Arduino, </span>
+                                        <span>Assembly, </span>
+                                        <span>Cuda, </span>
+                                        <span>Verilog;</span>
                                                                                 
                                     </ul>
                                 </li>
@@ -300,8 +333,8 @@
                                 <li><b>Miscellaneous:</b>
                                     <ul style="list-style-type:none">
                                         
-                                        <span>Git,&nbsp;</span>
-                                        <span>LaTeX&nbsp;</span>                                                   
+                                        <span>Git, </span>
+                                        <span>LaTeX;&nbsp;</span>                                                   
                                     </ul>
                                 </li>
                             </ul>
@@ -327,29 +360,12 @@
 
                             <hr>
                         </div>
-                        <div class="w3-display-container LeftCont " style="margin-bottom: 1%; padding-bottom: 1%;">
-
-                            <a href="CV.PDF">
-                                <img class=" icon1 w3-hover-opacity"style="width:19% " src="curriculum-vitae-icon-17.png"></img>
+                        <div class="w3-display-container LeftCont" style="margin-bottom: 1%; padding-bottom: 1%;">
+                            <a href="CV.PDF" style="text-decoration: none; display: block; text-align: center;">
+                                <span class="download-link">Download CV</span>
                             </a>
-                            <!-- <a href="https://en.sbu.ac.ir/">
-                                <img src="uni_sbu.png" style="width:30%; " class="myImage w3-hover-opacity" alt="Avatar"></img>
-                            </a>
-
-                            <a href="https://aut.ac.ir/en">
-                                <img src="aut-logo (2).png" style="width:30% ; margin-left: 2%;" class="myImage w3-hover-opacity" alt="Avatar"></img>
-                            </a>
-                            <a href="https://bme.aut.ac.ir/index.php?sid=2&slc_lang=en">
-                                <img src="bio.png" style="width:16% " class="myImage w3-hover-opacity Neuroscience" alt="Avatar"></img>
-                            </a>
-                            <a href="https://nodet.net/">
-                                <img src="Sampad.png" style="width:17%; margin-left: 1.5%;" class="myImage w3-hover-opacity" alt="Avatar"></img>
-                            </a> -->
-
-                            
-    
-    
                         </div>
+                        <p class="w3-large">
                     </div>
                     <br>
                     
@@ -376,9 +392,16 @@
                                 <p style="margin: 0%; padding:0%">(Iran’s largest Academic Institution)</p>
                             -->
                             <h7 class="">
-                                <b>M.Sc. in  Artificial Intelligence</br>
-                                
-                            </b>Overall GPA: 16.71/20 (4/4)</b>
+                                <b>M.Sc. in  Artificial Intelligence</b>
+                            <br>    
+                            <b>Overall GPA</b>: <b>17.86</b>/20 (<b>4</b>/4)</b>
+                            <br>
+                                <b style="margin: 0%;">Thesis: </b>Improving Semantic Textual Similarity Using Deep Learning </br>
+                                </b>
+                                <a href="https://scholar.google.com/citations?user=BVAsKDsAAAAJ&hl=en#">
+                                <b class="subTitle" style="margin: 0%;">Supervisor: Dr. Mehrnoush Shamsfard</br>
+                                </a>
+                                </b>
                             </h7>
 
                             <h6 class="era " style="margin: 0%;">
@@ -403,12 +426,16 @@
                             <h7 class="">
                                 <b>B.Sc. in Biomedical Engineering - Bioelectrics</b>
                                 <br>
-                                <b>Last Two Year's GPA: 17.01/20 (3.68/4)</b>
+                                <b>Last Two Year's GPA:</b> <b>17.01</b>/20 (<b>3.68</b>/4)
                                 <br>
-                                <b>Overall GPA: 16.05/20 (3.37)</b>
+                                <b>Overall GPA:</b> <b>16.05</b>/20 (<b>3.37</b>/4)</b>
                                 <br>
-                                <b style="margin: 0%;">Thesis: Heart rate measurement and blood perfusion
+                                <b style="margin: 0%;">Thesis:</b> Heart rate measurement and blood perfusion
                                     mapping in parts of human body skin using rPPG</br>
+                                </b>
+                                <a href="https://scholar.google.com/citations?user=8VdS96oAAAAJ&hl=en">
+                                <b class="subTitle" style="margin: 0%;">Supervisor: Dr. Vahidreza Nafisi</br>
+                                </a>
                                 </b>
                             </h7>
 
@@ -422,16 +449,19 @@
                             <a href="https://nodet.net/">
                                 <h4 class="subTitle" style="margin: 0%; padding:0%">
                                     <b style="margin: 0%; padding:0%">Allameh Helli High School</b>
+                                    
                                 </h4>
                             </a>
 
                             <h7 class="" style="margin: 0%; padding:0%">
-                                <b> Diploma in Physics and Mathematics</b>
+                                <b> Diploma in Physics and Mathematics</b></br>
+                                <b>Overall GPA:</b> <b>19.68</b>/20 </br>
                             </h7>
 
-                            <h6 class="era" style="margin: 0%; padding:0%">
+                            <h6 class="era " style="margin: 0%;">
                                 <i class="fa fa-calendar fa-fw w3-margin-right ii w3-hover-opacity"></i>[2012 – 2016]</h6>
-                            <!--
+                                
+                                <!--
                                 <p>Overall GPA:  out of 20</p>
                             -->
                             </br>
@@ -449,23 +479,22 @@
                         <ul style="list-style-type:circle;">
                             
                             <li>
-                                Machine Learning
+                            <b>Machine Learning</b>
+                            </li>
+                            
+                            <li>
+                            <b>Trustworthy AI</b>
                             </li>
                             <li>
-                                Computer Vision
+                            <b>Deep Learning</b>
                             </li>
                             <li>
-                                Artificial Intelligence in Medicine
+                            <b>Computer Vision</b>
                             </li>
                             <li>
-                                Deep Learning
+                            <b>Natural Language processing</b>
                             </li>
-                            <li>
-                                Natural Language processing
-                            </li>
-                            <li>
-                                Biomedical Signal and Image Processing 
-                            </li>
+                            
                         </ul>
                         
                     </div>
@@ -499,62 +528,96 @@
                             <hr>
                         </div>
                     </div>
-
-
-                    <!-- <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class="w3-text-grey w3-padding-16">
-                            
-                                <img class=" icon1 w3-hover-opacity" src="Work Experience.png"></img>
-                            
-                                <b class="Title">Work Experience</b>
-                        </h2>
-
-                        <div class="w3-container">
-                            <h6 class="subTitle">
-                                <b>
-                                    IPM Institute For Research In Fundamental Sciences
-                                </b>
-                            </h6>
-                            <h6 class="era">
-                                <i class="fa fa-calendar fa-fw w3-margin-right ii w3-hover-opacity"></i>[Jul 2019 – Dec 2019]
-                            </h6>
-                            <p>High performance computing intern 
-                                Under supervision of Dr. Dara Rahmati and Dr. Saeid Gorgin
-                                Designed a Guess-And-Determine attack to the RKE security system
-                                using Nvidia Geforce RTX 2080 and Bitslicing technique.</p>
-                            <hr>
-                        </div>
-                    </div> -->
-
-
-                    <!-- <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
+                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
                         <h2 class=" w3-padding-16">
+                            <b class="Title">Publications</b>
+                        </h2>
+                        <div class="w3-container">
+                        
+
+                            <h6>
+                                <b>HmBlogs: A big general Persian corpus (Ongoing)</b> 
+                                <a href="https://arxiv.org/abs/2111.02362"><img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
+                                <p>Participating in the ongoing BERT pretraining project using the HmBlogs \mbox{corpus} to advance Persian NLP. Contributing to data preprocessing, model fine-tuning, and model performance evaluation with the ultimate goal of completing the HmBlogs paper.</p>
+                            </h6>
                             
-                                <img class=" icon1 w3-hover-opacity" src="PRESENTATIONS2.png"></img>
-                            
-                                <b class="Title">Presentations</b>
+                        </div>
+                        
+                    </div>
+                    
+
+
+
+                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
+                        <h2 class=" w3-padding-16">
+                            <b class="Title">Research Experience</b>
                         </h2>
 
                         <ol type="1">
+
                             <li>
-                                "Design of a Speaker Recognition System using a convolutional neural network", B.Sc. thesis, 2021
+                                <b>Improving Semantic Textual Similarity Using Deep Learning</b> 
+                                <img src="https://img.shields.io/badge/-M.Sc. Thesis-8A2BE2"></img>
+                                <a href="https://drive.google.com/file/d/1kOTAV5CcJhq2D4bDK38LNl9KbVjxtfe5/view?usp=sharing"><img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
+                                <p>Improving clinical Semantic Textual Similarity (STS) using metric learning. Developing training strategies to enhance model representation to overcome challenges such as limited clinical data.</p>
                             </li>
+                            <hr>
                             <li>
-                                "G&D attack to the RKE security system", Internship project, 2019
+                                <b>Multi-Wavelength Video-Based Blood Perfusion Mapping in Human Body Skin using rPPG</b> 
+                                
+                                <img src="https://img.shields.io/badge/-Research Assistant-green"></img>
+                                <p>Researched different rPPG (Remote Photoplethysmography) signal extraction methods using videos from the skin at different light wavelengths to map blood flow below the skin with the cooperation of The Color and Visual Computing Laboratory (Colourlab) at the Norwegian University of Science and Technology (NTNU).</p>
+
                             </li>
+                            <hr>
                             <li>
-                                "Making music with AI", Research and Technical Presentation course, 2019
-                            </li>
-                            <li>
-                                "Hacking Techniques", Computer Lab Course, 2016
-                            </li>
-                            <li>
-                                " Application of Euler's number in real life", 2016
+                                <b>Heart Rate Measurement and Blood Perfusion Mapping in Parts of Human Body Skin using rPPG</b>
+                                <img src="https://img.shields.io/badge/-B.Sc. Thesis-22cccc"></img>
+                                <a href="https://drive.google.com/file/d/1rT8IuDQUG-BEC2bbgAKp4utJfjLqa896/view?usp=sharing"><img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
+                                <p>Estimated the heart rate and mapped blood flow below the skin using facial videos with a non-invasive method called rPPG. Involves detecting the Region of Interest (ROI) (using Neural Network, Thresholding, and Manual Selection), extracting the rPPG signal from the ROI (using two methods of calculating the average pixel intensity and Independent Component Analysis (ICA)), and calculating the Fourier Transform of the rPPG signal to identify the frequency with the highest amplitude as the estimated heart rate </p>
                             </li>
 
+
+                            
                         </ol>
-                        <hr>
-                    </div> -->
+                    </div>
+                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large" >
+                        <h2 class=" w3-padding-16">
+                            <b class="Title">Selected Coursework</b>
+                        </h2>
+                        <div style="column-count:1; padding-bottom: 1%;">
+                            <ul type="1">
+                                <li><b>Seminar</b> [M.Sc.] (<b>20</b>/20)</li>
+                                <li><b>Interpretable AI</b> (Visiting student at <b>University of Tehran</b>) [M.Sc.] (<b>19.4</b>/20) <a href="https://drive.google.com/file/d/1kOTAV5CcJhq2D4bDK38LNl9KbVjxtfe5/view?usp=sharing"><img src="https://img.shields.io/badge/-ABET-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a></li> 
+                                <li><b>Knowledge and Ontology Engineering</b> [M.Sc.] (<b>19.25</b>/20)</li>
+                                <li><b>Principles of Algoriths</b> (Visiting student at <b>K. N. Toosi University of Technology</b>) [B.Sc.] (<b>20</b>/20)</li>
+                                <li><b>Digital Signal Processing</b> [M.Sc.] (<b>19</b>/20)</li>
+                                <li><b>Deep Learning</b>  [M.Sc.] (<b>17.3</b>/20)</li>
+                                <li><b>Machine Learning</b> [M.Sc.] (<b>16.8</b>/20)</li>
+                                <li><b>Linear Control Systems</b> [B.Sc.] (<b>19</b>/20)</li>
+                                <li><b>Pattern Recognition</b> [M.Sc.] (<b>16.75</b>/20)</li>
+                                <li><b>Natural Language Processing</b> [M.Sc.] (<b>17</b>/20)</li>
+                                <li><b>Data Structure and Algorithms</b> [B.Sc.] (<b>17</b>/20)</li>
+                                <li><b>Principles of Rehabilitation</b> [B.Sc.] (<b>18.05</b>/20)</li>
+                                
+
+
+
+                                <!-- <li>B.Sc. Thesis (<b>20</b>/20)</li> -->
+                                <!-- <li>B.Sc. Internship (<b>19</b>/20)</li> -->
+                                <!-- <li>Startup Development (<b>20</b>/20)</li> -->
+                                <!-- <li>Embdded and Real-Time Systems (<b>20</b>/20)</li> -->
+                                <!-- <li>Internet of Things (<b>19</b>/20)</li> -->
+                                <!-- <li>Computer Graphics	(<b>19.5</b>/20)</li> -->
+                                <!-- <li>Research and Technical Presentation	(17/20)</li> -->
+                                <!-- <li>Technical English	(17/20)</li> -->
+                                <!-- <li>English for the Students of Engineering	(16.5/20)</li> -->
+                                <!-- <li>Differential Equations	(16.9/20)</li> -->
+
+                            </ul>
+                        </div>
+                        
+                    </div>
 
 
                     <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
@@ -567,31 +630,104 @@
 
                         <ol type="1">
                             <li>
+                                High-Accuracy FAQ Question Answering using Metric Learning (Angular Loss) and SPARQL-Based Ontology Querying
+                                <img src="https://img.shields.io/badge/-Ontology and Knowledge Engineering-008080"></img>
+                                <a href="https://github.com/soroushmajd/FAQ-Ontology"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+                                <a href="https://drive.google.com/file/d/1o8GV2zIeXCPyvBZEqiIKwIXxRe1foEO-/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
+
+                            </li>
+                            <li>
+                                Evaluating Fairness, Backdoor Attack, and Out-Of-Distribution Detection in ResNet18 Image Classification
+                                <img src="https://img.shields.io/badge/-Trustworthy AI-FF00FF"></img>
+                                <a href="https://github.com/soroushmajd/FAQ-Ontology"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+                                <a href="https://drive.google.com/file/d/17-kKOAMbBDDewIjYf3D-kHwBwjNxQM7k/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
+
+                            </li>
+                            <li>
+                                Model Interpretation using SHAP for Regression (MLP) and LIME for Image Classification (MobileNet v2)
+                                <img src="https://img.shields.io/badge/-Trustworthy AI-FF00FF"></img>
+                                <a href="https://github.com/soroushmajd/LIME-SHAP-Interpretable-AI"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+                                <a href="https://drive.google.com/file/d/1HxKV7nLtW5QYmVqswR4KFYO-LDhBhvAt/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
+
+                            </li>
+                            <li>
+                                Enhancing Robustness and Generalization in ResNet18 Classification with Angular Loss on Limited Training Data (20% of CIFAR-10 dataset)
+                                <img src="https://img.shields.io/badge/-Trustworthy AI-FF00FF"></img>
+                                <a href="https://github.com/soroushmajd/Robustness-Generalization-Interpretable-AI"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+                                <a href="https://drive.google.com/file/d/1eeMJGc9hbivT2JYX9hW_spXZ2QwaQz-L/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
+
+                            </li>
+                            <li>
+                                Question Answering Using Cosine Similarity Between Input Questions and Constructed Sentences (Subject, Object, Predicate) from the RDF Ontology
+                                <img src="https://img.shields.io/badge/-Ontology and Knowledge Engineering-008080"></img>
+                                <a href="https://github.com/soroushmajd/QA-Subject-Object-Predicate"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+                                <a href="https://drive.google.com/file/d/1o8GV2zIeXCPyvBZEqiIKwIXxRe1foEO-/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
+
+                            </li>
+                            <li>
+                                Comparing Performance of Contextual and Static Embeddings in Analogical Reasoning Tasks
+                                <img src="https://img.shields.io/badge/-Natural Language Processing-800000"></img>
+                                <a href="https://github.com/soroushmajd/Analogy-NLI-NLP"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+
+                            </li>
+                            <li>
                                 Image Colorization with Convolutional Neural Network
+                                <img src="https://img.shields.io/badge/-Deep Learning-FFD700"></img>
+                                <a href="https://github.com/soroushmajd/Image-Colorization-with-Convolutional-Neural-Network"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+
                             </li>
                             <li>
                                 Tata Steel Ltd. Stock Price Prediction Using Hidden Markov Model
+                                <img src="https://img.shields.io/badge/-Machine Learning-E6E6FA"></img>
+                                <a href="https://github.com/soroushmajd/Stock-Price-Prediction-Using-HMM"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+
                             </li>
                             <li>
                                 Text Classification on WELFake Dataset with BERT and RoBERTa
+                                <img src="https://img.shields.io/badge/-Deep Learning-FFD700"></img>
+                                <a href="https://github.com/soroushmajd/FN-Text-Classification"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+
                             </li>
                             <li>
                                 Multi-Layer Perceptron for Sign Language Image Classification
+                                <img src="https://img.shields.io/badge/-Deep Learning-FFD700"></img>
+                                <a href="https://github.com/soroushmajd/Multi-Layer-Perceptron-for-Image-Classification"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+
                             </li>
                             <li>
                                 Human Activity Recognition with CNN-LSTM
+                                <img src="https://img.shields.io/badge/-Neural Networks-FF6B6B"></img>
+                                <a href="https://github.com/soroushmajd/Human-Activity-Recognition-with-CNN-LSTM-and-Bi-directional-CNN-LSTM"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+
                             </li>
                             <li>
                                 Google Stock Price Prediction Based on GRU and LSTM models
+                                <img src="https://img.shields.io/badge/-Deep Learning-FFD700"></img>
+                                <a href="https://github.com/soroushmajd/Google-Stock-Price-Prediction-with-GRU-and-LSTM"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+
                             </li>
                             <li>
                                 Earthquake Prediction in Iran
+                                <img src="https://img.shields.io/badge/-Machine Learning-E6E6FA"></img>
+                                <a href="https://github.com/soroushmajd/Earthquake-Prediction-using-Machine-Learning-Techniques"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
+
+                            </li>
+                            <li>
+                                Baseline Wander Removal in ECG Signals Using FIR Filter, IIR Filter, EMD, Moving Average, and Wavelet Transform
+                                <img src="https://img.shields.io/badge/-Digital Signal Processing-black"></img>
+
+                            </li>
+                            <li>
+                                Comparing Object Recognition in Humans and Deep Convolutional Neural Networks Based on Kay et al. (2008)
+                                <img src="https://img.shields.io/badge/-Neuromatch Academy-40E0D0"></img>
+
                             </li>
                         </ol>
                         <hr>
                     </div>
 
-
+                    
+                    
                     <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
                         <h2 class=" w3-padding-16">
                             <!--<img class=" icon1 w3-hover-opacity" src="HONORS AND AWARDS.png"></img>
@@ -603,9 +739,7 @@
                             <li>
                                 Achieved top 1% place among all applicants of the Nationwide University Entrance Exam (Konkour) for B.Sc. in Engineering among 162,879 applicants, Iran, 2016.
                             </li>
-                            <li>
-                                Best Project Award, NODET Seminar of Science and Technology, for project "Valveless Pulse jet", Allame Helli High School, Tehran, Iran, 2015.
-                            </li>
+                            
                             <li>
                                 Member of National Organization for Development of Exceptional
                                 Talents (NODET), Tehran, Iran, 2012--2016.
@@ -644,6 +778,15 @@
                         </h2>
                         <div class="lang" style="margin-top: 0%; padding-top:0%;">
                             <p>
+                                <a href="https://scholar.google.com/citations?hl=en&user=BVAsKDsAAAAJ&view_op=list_works&sortby=pubdate">
+                                    <h4 class="Refh4">
+                                        Mehrnoush Shamsfard
+                                    </h4>
+                                </a>
+                                Associate Professor at Computer Science and Engineering Department, Shahid Beheshti University
+                                <br> Email: m-shams@sbu.ac.ir
+                                <br>
+                                <hr>
                                 <a href="https://scholar.google.com/citations?user=8VdS96oAAAAJ&hl=en">
                                     <h4 class="Refh4">
                                         Vahidreza Nafisi
@@ -665,15 +808,7 @@
                                 <hr>
                                 
 
-                                <a href="https://www.linkedin.com/in/tavasoli">
-                                    <h4 class="Refh4">
-                                        Reza Tavasoli
-                                    </h4>
-                                </a>
-                                PhD Candidate at Computer Science and Engineering Department, University of South Carolina
-                                <br> Email: tavasoli@email.sc.edu
-                                <br>
-                                <hr>
+                                
 
 
                           

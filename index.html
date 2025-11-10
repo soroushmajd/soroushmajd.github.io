@@ -1,920 +1,1416 @@
-<!DOCTYPE html>
-<html>
-<title>Seyed Soroush Majd</title>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="">
-<link rel="icon" href="daisy.png" sizes="192x192" />
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
-<head> <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Nunito"> </head>
+<!doctype html>
+<html lang="en">
 <head>
-    <!-- ... other head content ... -->
-    <style>
-        .download-link {
-            border-bottom: 2px solid transparent;
-            display: inline-block;
-            font-size: 40px;
-            font-weight: bold;
-            padding: 10px;
-            color: #1ba1e2;
-            transition: color 0.2s;
-        }
+  <meta charset="utf-8" />
+  <title>Soroush Majd — CV</title>
+  <meta name="viewport" content="width=1100, user-scalable=yes">
+  <meta name="description" content="Soroush Majd" />
+  <meta name="author" content="Soroush Majd" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0a66c2" />
+  <link rel="icon" href="1.png" sizes="192x192" />
+  <link rel="canonical" href="https://example.com/" />
 
-        .download-link:hover {
-            color: #ff0000; /* Change this to the desired hover color */
-        }
-    </style>
+  <!-- Social cards -->
+  <meta property="og:title" content="Seyed Soroush Majd — CV" />
+  <meta property="og:description" content="AI/NLP · Deep Learning · Trustworthy AI" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="daisy.png" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400..700;1,400..700&family=Newsreader:opsz,wght@6..72,300..800&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400..700;1,400..700&family=Newsreader:opsz,wght@6..72,300..800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400..700;1,400..700&family=Newsreader:opsz,wght@6..72,300..800&display=swap" rel="stylesheet"/></noscript>
+
+  <style>
+    :root{
+      --ink:#12151c; --ink-strong:#0d1017; --muted:#556079; --line:#dfe6f0; --bg:#f5f7fa;
+      --panel:color-mix(in oklab,var(--bg) 90%,white);
+      --accent:#0a66c2; --accent-600:#0a59ac; --accent-700:#084a90;
+      --accent-2:#7a5cff; --accent-3:#0fb79d;
+      --radius:14px; --radius-lg:18px; --header-radius:18px;
+      --dur-1:120ms; --dur-2:200ms; --dur-3:360ms;
+      --max:1100px; --lh:1.55; --safe-b:env(safe-area-inset-bottom,0px);
+      --header-top-gap:10px; --header-h:100px;
+      --focus:0 0 0 3px color-mix(in oklab,var(--accent) 35%,transparent);
+      --ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      --header-border-w:1px;
+
+      --silver-a:#eef2f7;
+      --silver-b:#f7f9fc;
+      --silver-brd:#d6dde8;
+    }
+    @media (min-resolution:2dppx){ :root{ --header-border-w:.5px } }
+
+    body[data-theme="night"]{
+      --bg:#0a0f1a;
+      --panel:#0f1726;
+      --ink:#e9eef8;
+      --ink-strong:#f6f8fe;
+      --muted:#a2b1cc;
+      --line:#23314b;
+      --accent:#82b1ff;
+      --accent-600:#6fa1f6;
+      --accent-700:#5a8de0;
+      --accent-2:#b4a3ff;
+      --accent-3:#58d6c9;
+      --focus:0 0 0 3px color-mix(in oklab,var(--accent) 42%,transparent);
+    }
+
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--header-h)}
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+    body{
+      margin:0;color:var(--ink);
+      font:15px/var(--lh) Newsreader, ui-serif, Georgia, serif;
+      background:
+        radial-gradient(90vw 60vw at -12% -8%, color-mix(in oklab, var(--silver-a) 28%, transparent) 18%, transparent 60%),
+        radial-gradient(80vw 50vw at 112% -10%, color-mix(in oklab, var(--silver-b) 22%, transparent) 16%, transparent 60%),
+        var(--bg);
+      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;
+      transition:background-color var(--dur-3),color var(--dur-2);
+    }
+
+    body[data-theme="night"]{
+      background:
+        radial-gradient(66vw 52vw at 110% -14%, color-mix(in oklab, var(--accent-2) 7%, transparent) 10%, transparent 60%),
+        radial-gradient(60vw 46vw at -14% -6%,  color-mix(in oklab, var(--accent-3) 6%, transparent) 10%, transparent 60%),
+        var(--bg);
+    }
+    
+
+    .page{max-width:var(--max);margin:32px auto 84px;padding-inline:18px}
+    a{color:var(--accent);text-decoration:underline;text-underline-offset:2px;outline:none}
+    a:hover{color:var(--accent-700)} a:focus-visible{box-shadow:var(--focus);border-radius:8px}
+    body[data-theme="night"] a:hover{ text-shadow:0 0 10px color-mix(in oklab,var(--accent) 35%,transparent) }
+
+    h1,h2,h3{
+      font-family:"Crimson Pro", ui-serif, Georgia, serif;
+      font-weight:600; letter-spacing:.15px; margin:0;
+      color:color-mix(in oklab, var(--ink-strong) 88%, #000 12%);
+    }
+    h1{font-size:clamp(28px,3.6vw,38px);line-height:1.12}
+    h2{font-size:21px;margin-top:22px;margin-bottom:6px}
+    h3{font-size:17px;margin:0 0 2px}
+    p{margin:8px 0} ul{margin:6px 0;padding-left:20px}
+    .muted{color:var(--muted)} .rule{height:1px;background:var(--line);border:0;margin:16px 0}
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:16px;top:16px;width:auto;height:auto;padding:10px 12px;background:var(--panel);color:var(--ink);border-radius:12px;border:1px solid var(--line);box-shadow:0 6px 16px rgba(8,12,20,.1)}
+
+    .panel,.card{ 
+        font-family:var(--ui); }
+    
+    header#siteHeader { display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:1.5rem 0;}
+
+    header{
+      position:sticky; top:var(--header-top-gap); z-index:1000;
+      border:var(--header-border-w) solid color-mix(in oklab, var(--ink-strong) 12%, var(--line));
+      border-radius:var(--header-radius);
+      padding:16px; margin-bottom:18px;
+      background:
+        linear-gradient(180deg,
+          color-mix(in oklab, var(--header-silver-1) 55%, white 45%),
+          color-mix(in oklab, var(--header-silver-2) 20%, transparent)
+        );
+      -webkit-backdrop-filter:blur(14px) saturate(140%); backdrop-filter:blur(14px) saturate(140%);
+      box-shadow: 0 14px 36px rgba(8,12,20,.10), 0 0 0 var(--header-border-w) color-mix(in oklab, var(--header-silver-2) 32%, transparent) inset;
+      overflow:clip; background-clip:padding-box;
+      transition:border-color var(--dur-2), box-shadow var(--dur-2), background var(--dur-2);
+    }
+    header.scrolled{
+      box-shadow:0 20px 46px rgba(8,12,20,.12), 0 0 0 var(--header-border-w) color-mix(in oklab, var(--header-silver-2) 40%, transparent) inset;
+      border-color: color-mix(in oklab, var(--header-silver-brd) 78%, #ffffff 22%);
+    }
+    body[data-theme="night"] header{
+      background: linear-gradient(180deg, rgba(12,16,28,.55), rgba(12,16,28,.45)), color-mix(in oklab, var(--panel) 22%, transparent);
+      -webkit-backdrop-filter: blur(20px) saturate(170%); backdrop-filter: blur(20px) saturate(170%);
+      box-shadow: 0 24px 60px rgba(0,0,0,.38), 0 0 0 var(--header-border-w) color-mix(in oklab, var(--accent) 28%, transparent) inset;
+      border-color: color-mix(in oklab, var(--ink) 20%, var(--line));
+    }
+
+
+    :root{ --header-silver-1:#eef2f7; --header-silver-2:#f5f7fb; --header-silver-brd:#d6dde8; }
+    body[data-theme="day"] header{
+      background: linear-gradient(180deg, color-mix(in oklab, var(--header-silver-1) 55%, white 45%), color-mix(in oklab, var(--header-silver-2) 20%, transparent));
+      border-color:var(--header-silver-brd);
+      box-shadow: 0 14px 36px rgba(8,12,20,.10), 0 0 0 var(--header-border-w) color-mix(in oklab, var(--header-silver-2) 32%, transparent) inset;
+    }
+    body[data-theme="day"] header.scrolled{
+      border-color:color-mix(in oklab, var(--header-silver-brd) 78%, #ffffff 22%);
+      box-shadow: 0 20px 46px rgba(8,12,20,.12), 0 0 0 var(--header-border-w) color-mix(in oklab, var(--header-silver-2) 40%, transparent) inset;
+    }
+
+    nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    .toc a{
+      color:color-mix(in oklab,var(--ink) 85%, #000 15%);
+      padding:8px 14px; border-radius:999px; white-space:nowrap; text-decoration:none;
+      border:1px solid rgba(0,0,0,.06);
+      background:rgba(255,255,255,0.5);
+      -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+      box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 2px 6px rgba(8,12,20,.06);
+      transition:background-color var(--dur-2), color var(--dur-2), border-color var(--dur-2);
+      font-family:var(--ui);
+    }
+    body[data-theme="night"] .toc a{
+      color:color-mix(in oklab,var(--ink) 92%, #000 8%);
+      border-color: color-mix(in oklab, var(--ink) 12%, var(--line));
+      background: color-mix(in oklab, var(--panel) 70%, transparent);
+      box-shadow: 0 1px 0 rgba(255,255,255,.04) inset, 0 2px 10px rgba(0,0,0,.25);
+    }
+    .toc a:hover{ color:var(--accent); background:color-mix(in oklab, var(--accent) 10%, white 90%) }
+    body[data-theme="night"] .toc a:hover{ background:color-mix(in oklab, var(--accent) 8%, var(--panel)) }
+    .toc a.active{
+      color:#fff;
+      background:linear-gradient(180deg, color-mix(in oklab,var(--accent) 94%, #fff 6%), var(--accent-600));
+      border-color:color-mix(in oklab,var(--accent) 55%, transparent);
+      text-decoration:none;
+    }
+    .toc .cv-pill{ color:#b10e0e; border-color:rgba(177,14,14,.25); background:rgba(255,255,255,.9) }
+    body[data-theme="night"] .toc .cv-pill{
+      color:#ffb3b3; border-color:color-mix(in oklab, #ff6b6b 22%, var(--line));
+      background:color-mix(in oklab, var(--panel) 85%, transparent)
+    }
+
+    [id]{scroll-margin-top:var(--header-h)}
+
+    .layout{display:grid;grid-template-columns:1fr;gap:20px;margin-top:16px;align-items:start}
+    .col{display:grid;gap:18px}
+    @media (min-width:960px){
+  .layout{ grid-template-columns:320px 1fr }
+}
+/* Phones/tablets: touch */
+@media (any-hover: none) and (any-pointer: coarse){
+  .page{ min-width: auto; }
+  .layout{ grid-template-columns: 1fr; }
+}
+if (window.matchMedia('(any-pointer: coarse)').matches) {
+  document.documentElement.classList.add('touch');
+}
+
+  /* Center your site header (name/title) */
+  header#siteHeader {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Center the section navigation buttons */
+  header#siteHeader nav.toc {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    text-align: center !important;
+    margin-top: 0.6rem !important;
+  }
+
+  /* Optional: make each button a little smaller for phones */
+  header#siteHeader nav.toc a {
+    font-size: 0.95rem !important;
+    padding: 0.4rem 0.8rem !important;
+  }
+
+    .card,.panel{
+      border:1px solid var(--line); border-radius:var(--radius-lg);
+      background:color-mix(in oklab,var(--bg) 90%, rgb(192, 192, 192) 10%);
+      box-shadow: 0 1px 0 rgba(255,255,255,.65) inset, 0 8px 22px rgba(8,12,20,.06);
+      padding:16px;
+      transition: background-color var(--dur-3), border-color var(--dur-2), box-shadow var(--dur-2);
+    }
+    body[data-theme="night"] .panel, body[data-theme="night"] .card{
+      background: color-mix(in oklab, var(--bg) 88%, white 12%);
+      border-color: color-mix(in oklab, var(--ink) 18%, var(--line));
+      box-shadow: 0 12px 26px rgba(0,0,0,.36), 0 1px 0 rgba(255,255,255,.03) inset;
+    }
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      font:600 13px/1 var(--ui); letter-spacing:.25px;
+      padding:10px 12px; border-radius:14px; text-decoration:none;
+      border:1px solid var(--line);
+      color:color-mix(in oklab,var(--ink-strong) 92%, #000 8%);
+      background:linear-gradient(180deg, color-mix(in oklab,var(--bg) 88%, white 12%), color-mix(in oklab,var(--bg) 96%, transparent));
+      box-shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 8px 18px rgba(8,12,20,.08);
+      transition:background-color var(--dur-2), color var(--dur-2), border-color var(--dur-2);
+    }
+    body[data-theme="night"] .btn{
+      color:var(--ink);
+      background:linear-gradient(180deg, color-mix(in oklab, var(--panel) 86%, transparent), color-mix(in oklab, var(--panel) 94%, transparent));
+      border-color: color-mix(in oklab, var(--ink) 12%, var(--line));
+      box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 8px 18px rgba(0,0,0,.28);
+    }
+    .btn:hover{ border-color:color-mix(in oklab,var(--accent) 20%, var(--line)); background:color-mix(in oklab,var(--bg) 85%, white 15%); color:var(--accent); }
+    body[data-theme="night"] .btn:hover{ background:color-mix(in oklab, var(--accent) 7%, var(--panel) 93%); }
+    .btn.block{ display:flex; width:100% }
+    .btn.pdf{ color:#b10e0e } .btn.gh{ color:#24292f } .btn.li{ color:#0a66c2 } .btn.tg{ color:#26a5e4 } .icon{width:20px;height:20px;display:inline-block;object-fit:contain;vertical-align:-3px}
+
+    .edu{position:relative;padding:14px;border:1px solid var(--line);border-radius:12px;background:color-mix(in oklab,var(--bg) 96%, white 4%)}
+    body[data-theme="night"] .edu{ background:color-mix(in oklab, var(--bg) 90%, white 10%) }
+    .edu + .edu{margin-top:12px}
+    .edu .head{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:baseline}
+    .edu h3{font-size:18px;margin:0}
+    .edu .when{font-size:.85rem;color:var(--muted);justify-self:end;letter-spacing:.2px}
+    .edu .role{color:var(--muted);font-weight:600;margin-top:6px}
+    .edu .meta{margin-top:6px;color:var(--ink)}
+    .edu .meta small{color:var(--muted);font-size:.9rem}
+
+    ol.pubs{list-style:decimal;padding-left:22px;margin:8px 0}
+    .pub{margin:10px 0}.pub .venue{font-style:italic}.pub .status{color:var(--muted)}.links a{margin-left:8px}
+
+    #topBtn,#themeBtn{
+      position:fixed;right:16px;z-index:1200;border:1px solid var(--line);border-radius:12px;
+      background:color-mix(in oklab,var(--bg) 92%, white 8%);color:var(--muted);
+      box-shadow:0 10px 26px rgba(8,12,20,.10);
+      opacity:0;pointer-events:none;
+      transition:opacity var(--dur-2), background-color var(--dur-2), border-color var(--dur-2);
+    }
+    #topBtn{bottom:calc(18px + var(--safe-b));width:44px;height:44px;font-size:18px;display:grid;place-items:center}
+    #themeBtn{bottom:calc(74px + var(--safe-b));width:44px;height:44px;font-size:16px;display:grid;place-items:center}
+    #topBtn.show,#themeBtn.show{opacity:1;pointer-events:auto}
+
+    @media print{
+      #topBtn,#themeBtn,.skip-link,.toc{display:none!important}
+      a{text-decoration:none;color:#000}
+      header{position:static;top:auto;border:1px solid #999;border-radius:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;background:#fff}
+      .layout{grid-template-columns:1fr!important}
+      .card,.panel{box-shadow:none}
+    }
+
+    :root { color-scheme: light dark }
+    html, body, header, .panel, .card {
+      transition:
+        background-color var(--dur-3) cubic-bezier(.2,.8,.2,1),
+        color var(--dur-2) cubic-bezier(.2,.8,.2,1),
+        border-color var(--dur-2) cubic-bezier(.2,.8,.2,1),
+        box-shadow var(--dur-2) cubic-bezier(.2,.8,.2,1);
+    }
+
+    :root{ --night-text-strength: 80%; --night-heading-bump: 20%; --night-link-strength: 80%; }
+    body[data-theme="night"]{ color: color-mix(in oklab, var(--ink) var(--night-text-strength), var(--bg)); }
+    body[data-theme="night"] h1, body[data-theme="night"] h2, body[data-theme="night"] h3{
+      color: color-mix(in oklab, var(--ink-strong) calc(var(--night-text-strength) + var(--night-heading-bump)), var(--bg));
+    }
+    body[data-theme="night"] .muted, body[data-theme="night"] small, body[data-theme="night"] .when{
+      color: color-mix(in oklab, var(--ink) 80%, var(--bg));
+    }
+    body[data-theme="night"] a{ color: color-mix(in oklab, var(--accent) var(--night-link-strength), var(--bg)); }
+    body[data-theme="night"] a:hover{ color: color-mix(in oklab, var(--accent) 94%, var(--bg)); text-shadow:none; }
+    body[data-theme="night"] .panel, body[data-theme="night"] .card{
+      color: color-mix(in oklab, var(--ink) var(--night-text-strength), var(--bg));
+    }
+
+    .panel.boxed{ padding:16px }
+    .panel.boxed > h2{ margin-bottom:10px }
+
+    .section-box{
+      position:relative; padding:14px; border:1px solid var(--line); border-radius:12px; background:#f6f7fb;
+      box-shadow: 0 1px 0 rgba(255,255,255,.65) inset;
+    }
+    body[data-theme="night"] .section-box{
+      background:color-mix(in oklab, var(--bg) 90%, white 10%);
+      border-color:color-mix(in oklab, var(--ink) 18%, var(--line));
+      box-shadow: 0 12px 26px rgba(0,0,0,.12);
+    }
+    .section-box > :first-child{ margin-top:0 }
+    .section-box > :last-child{ margin-bottom:0 }
+
+    body[data-theme="day"]{ background:#E6E8EB !important; background-image:none !important; }
+    body[data-theme="night"] .btn:hover{ text-shadow: 0 0 10px color-mix(in oklab, var(--accent) 40%, transparent); }
+    .btn:focus-visible{ text-shadow: 0 0 8px color-mix(in oklab, var(--accent) 35%, transparent); }
+
+    .card.boxed{
+      padding:16px; border-radius:12px; border:1px solid var(--line);
+      background:color-mix(in oklab,var(--bg) 96%, white 4%); box-shadow:0 1px 0 rgba(255,255,255,.65) inset;
+    }
+    body[data-theme="night"] .card.boxed{
+      background:color-mix(in oklab, var(--bg) 90%, white 10%);
+      border-color:color-mix(in oklab, var(--ink) 18%, var(--line));
+      box-shadow: 0 12px 26px rgba(0,0,0,.12);
+    }
+    .edu .where a { color: inherit; text-decoration: none; }
+    .edu .where a:hover { text-decoration: underline; }
+
+    #skills .grid{display:grid; gap:14px}
+    #skills .row{display:grid; gap:8px}
+    #skills .label{ font:600 12px/1 var(--ui); letter-spacing:.3px; color:var(--muted); text-transform:uppercase; }
+    #skills .items{ display:grid; grid-template-columns:repeat(auto-fit, minmax(120px, 1fr)); gap:10px; list-style:none; padding:0; margin:0; }
+    #skills .items li{
+      border:1px solid var(--line); border-radius:10px; padding:8px 10px; text-align:center;
+      font:600 13px/1.2 var(--ui); color:color-mix(in oklab,var(--ink) 90%, #000 10%);
+      background:linear-gradient(180deg, color-mix(in oklab, var(--bg) 92%, white 8%), color-mix(in oklab, var(--bg) 98%, transparent));
+      box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 4px 12px rgba(8,12,20,.06);
+    }
+    body[data-theme="night"] #skills .items li{
+      background:linear-gradient(180deg, color-mix(in oklab, var(--panel) 86%, transparent), color-mix(in oklab, var(--panel) 94%, transparent));
+      border-color:color-mix(in oklab, var(--ink) 12%, var(--line));
+      box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 8px 18px rgba(0,0,0,.28);
+    }
+
+    #interests .grid{display:grid; gap:14px}
+    #interests .row{display:grid; gap:8px}
+    #interests .label{ font:600 12px/1 var(--ui); letter-spacing:.3px; color:var(--muted); text-transform:uppercase; }
+    #interests .items{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
+      gap:10px;
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    #interests .items li{
+      border:1px solid var(--line);
+      border-radius:10px;
+      padding:10px 12px;
+      text-align:center;
+      font:600 13px/1.2 var(--ui);
+      color:color-mix(in oklab,var(--ink) 90%, #000 10%);
+      background:linear-gradient(180deg,
+        color-mix(in oklab, var(--bg) 92%, white 8%),
+        color-mix(in oklab, var(--bg) 98%, transparent)
+      );
+      box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 4px 12px rgba(8,12,20,.06);
+      transition: none !important;
+    }
+    body[data-theme="night"] #interests .items li{
+      background:linear-gradient(180deg,
+        color-mix(in oklab, var(--panel) 86%, transparent),
+        color-mix(in oklab, var(--panel) 94%, transparent)
+      );
+      border-color:color-mix(in oklab, var(--ink) 12%, var(--line));
+      box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 8px 18px rgba(0,0,0,.28);
+    }
+
+    /* Publications inline tweaks */
+    .pub .venue, .pub .status, .pub .links { display:block; margin-top:4px; }
+    .btn.pdf.small, .btn.link.small { padding:6px 9px; border-radius:10px; font-size:12px; line-height:1; }
+    .badge.access {
+      display:inline-flex; align-items:center; gap:6px;
+      font:600 12px/1 var(--ui);
+      padding:6px 9px; border-radius:10px;
+      border:1px solid var(--line);
+      color:color-mix(in oklab,var(--ink-strong) 92%, #000 8%);
+      background:linear-gradient(180deg, color-mix(in oklab,var(--bg) 88%, white 12%), color-mix(in oklab,var(--bg) 96%, transparent));
+      box-shadow:0 1px 0 rgba(255,255,255,.6) inset, 0 8px 18px rgba(8,12,20,.08);
+    }
+    body[data-theme="night"] .badge.access{
+      color:var(--ink);
+      background:linear-gradient(180deg, color-mix(in oklab, var(--panel) 86%, transparent), color-mix(in oklab, var(--panel) 94%, transparent));
+      border-color: color-mix(in oklab, var(--ink) 12%, var(--line));
+      box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 8px 18px rgba(0,0,0,.28);
+    }
+
+    .pill{
+      display:inline-flex; align-items:center; gap:6px;
+      font:600 12px/1 var(--ui);
+      padding:6px 9px; border-radius:999px; border:1px solid var(--line);
+      background:linear-gradient(180deg, color-mix(in oklab,var(--bg) 92%, white 8%), color-mix(in oklab,var(--bg) 98%, transparent));
+    }
+    body[data-theme="night"] .pill{
+      background:linear-gradient(180deg, color-mix(in oklab,var(--panel) 86%, transparent), color-mix(in oklab,var(--panel) 94%, transparent));
+      border-color: color-mix(in oklab, var(--ink) 12%, var(--line));
+    }
+    .pill .icon{ width:14px; height:14px; vertical-align:middle }
+
+    /* Publication line-keeping */
+    #publications .pubs li.pub > div > strong,
+    #publications .pubs li.pub > div > .authorship { display:inline !important; vertical-align:baseline !important; white-space:normal !important; }
+    #publications .pubs li.pub > div > .authorship { margin-left:6px !important; font-style:italic !important; font-size:.9em !important; color:inherit !important; }
+    #publications .pubs li.pub > div > .venue, #publications .pubs li.pub > div > .status { display:block !important; font-size:.9em !important; margin-top:2px !important; line-height:1.4 !important; }
+    #publications .pubs li.pub { margin-bottom:6px !important; line-height:1.4 !important; }
+
+    /* SKILLS — consistent with .edu and buttons */
+/* tighter spacing for skill items inside .edu */
+/* SKILLS: flexible, neatly aligned layout (no fixed column count) */
+#skills .items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 6px 10px; /* even horizontal + vertical spacing */
+  margin-top: 6px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Each skill chip */
+#skills .items li {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: 0.88em;
+  font-weight: 500;
+  background: var(--panel);
+  color: var(--ink);
+  line-height: 1.2em;
+}
+
+/* Night mode consistency with other sections */
+body[data-theme="night"] #skills .items li {
+  background: var(--panel);
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+
+
+
+		/* Languages: consistent with .edu, custom inner color */
+		#languages .lang-list{
+			list-style:none;
+			margin:0;
+			padding:0;
+			display:grid;
+			gap:12px;
+		}
+
+		#languages .lang{
+			padding:14px;
+			border:1px solid var(--line);
+			border-radius:12px;
+			background:color-mix(in oklab, var(--bg) 96%, white 4%);
+			box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 8px 18px rgba(8,12,20,.06);
+		}
+
+		body[data-theme="night"] #languages .lang{
+			background:rgba(8,12,20,.10); /* from your image */
+			border-color:color-mix(in oklab, var(--ink) 15%, var(--line));
+			box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 10px 20px rgba(0,0,0,.25);
+		}
+
+		#languages .lang-head{
+			display:grid;
+			grid-template-columns:1fr auto;
+			gap:6px 12px;
+			align-items:baseline;
+		}
+
+		#languages .lang-name{
+			font-weight:600;
+			margin:0;
+			color:var(--ink);
+		}
+
+		#languages .lang-level{
+			font-size:.88rem;
+			color:var(--muted);
+			letter-spacing:.2px;
+			justify-self:end;
+		}
+
+		#languages .meta{
+			margin-top:6px;
+			color:var(--ink);
+		}
+
+		#languages .pill{
+			padding:6px 9px;
+			border-radius:999px;
+			font:600 12px/1 var(--ui);
+			border:1px solid var(--line);
+			background:linear-gradient(180deg, color-mix(in oklab,var(--bg) 92%, white 8%), color-mix(in oklab,var(--bg) 98%, transparent));
+		}
+
+		body[data-theme="night"] #languages .pill{
+			background:linear-gradient(180deg, color-mix(in oklab,rgba(8,12,20,.10) 90%, transparent), color-mix(in oklab,rgba(8,12,20,.10) 96%, transparent));
+			border-color:color-mix(in oklab, var(--ink) 10%, var(--line));
+		}
+
+/* COURSE CHIP — same visual family as .btn, but static (no hover animation) */
+.btn.course{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 9px; border-radius:10px;
+  font:600 12px/1 var(--ui); letter-spacing:.25px;
+  border:1px solid color-mix(in oklab, var(--line) 70%, var(--course) 30%);
+  background:
+    linear-gradient(180deg,
+      color-mix(in oklab, var(--bg) 86%, var(--course) 14%),
+      color-mix(in oklab, var(--bg) 94%, transparent)
+    );
+  box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 8px 18px rgba(8,12,20,.08);
+  color:color-mix(in oklab, var(--ink-strong) 90%, #000 10%);
+  text-decoration:none; user-select:none;
+  transition:none !important; /* lock appearance on hover */
+
+
+<style>
+  /* Remove bullets just for the projects list */
+  #projects .tight{
+    list-style:none;
+    margin:0;
+    padding-left:0;
+  }
+
+  /* Course badge: same family as your buttons, but static + colored */
+  .btn.course{
+    display:inline-flex; align-items:center; gap:6px;
+    padding:6px 9px; border-radius:10px;
+    font:600 12px/1 var(--ui); letter-spacing:.25px;
+    border:1px solid color-mix(in oklab, var(--line) 70%, var(--course) 30%);
+    background:
+      linear-gradient(180deg,
+        color-mix(in oklab, var(--bg) 86%, var(--course) 14%),
+        color-mix(in oklab, var(--bg) 94%, transparent)
+      );
+    box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 8px 18px rgba(8,12,20,.08);
+    color:color-mix(in oklab, var(--ink-strong) 92%, #000 8%);
+    text-decoration:none;
+    user-select:none;
+    cursor:default;
+    transition:none !important; /* no hover animation */
+  }
+  .btn.course:hover,
+  .btn.course:active{
+    border:1px solid color-mix(in oklab, var(--line) 70%, var(--course) 30%);
+    background:
+      linear-gradient(180deg,
+        color-mix(in oklab, var(--bg) 86%, var(--course) 14%),
+        color-mix(in oklab, var(--bg) 94%, transparent)
+      );
+    color:color-mix(in oklab, var(--ink-strong) 92%, #000 8%);
+    box-shadow:0 1px 0 rgba(255,255,255,.55) inset, 0 8px 18px rgba(8,12,20,.08);
+  }
+
+  body[data-theme="night"] .btn.course{
+    border-color: color-mix(in oklab, var(--line) 55%, var(--course) 45%);
+    background:
+      linear-gradient(180deg,
+        color-mix(in oklab, var(--panel) 85%, var(--course) 15%),
+        color-mix(in oklab, var(--panel) 94%, transparent)
+      );
+    box-shadow:0 1px 0 rgba(255,255,255,.05) inset, 0 8px 18px rgba(0,0,0,.28);
+    color: color-mix(in oklab, var(--ink) 86%, var(--bg));
+  }
+  body[data-theme="night"] .btn.course:hover{
+    border-color: color-mix(in oklab, var(--line) 55%, var(--course) 45%);
+    background:
+      linear-gradient(180deg,
+        color-mix(in oklab, var(--panel) 85%, var(--course) 15%),
+        color-mix(in oklab, var(--panel) 94%, transparent)
+      );
+  }
+
+
+</style>
+
+
+  
 </head>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-    <style>
-         @font-face {
-font-family: Nunito;
-src: url("./Nunito/Nunito-Regular.ttf") format('truetype');
-}
-@font-face {
-font-family: Nunito;
-src: url("./Nunito/Nunito-Bold.ttf") format('truetype');
-font-weight: bold;
-font-style: normal;
-}
-@font-face {
-font-family: Nunito;
-src: url("./Nunito/Nunito-Italic.ttf") format('truetype');
-font-weight: normal;
-font-style: italic;
-}
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Nunito', sans-serif;
-            font-weight: 400;
-        }
-
-        h1 {
-            font-family: 'Nunito', sans-serif;
-            font-weight: 450;
-            color: rgb(255, 255, 255);
-            background-color: #3a73a9;
-            margin: 2%;
-            padding: 0%;
-            border: 10px;
-            border-color: black;
-            align-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        
-        h6.subTitle {
-            margin: 0px;
-            padding: 0%;
-        }
-        
-        hr {
-            color: red;
-        }
-        
-        .ii {
-            color: #3a73a9;
-        }
-        
-        .TA-CName {
-            color: rgb(63, 63, 63);
-            font-size: 17px;
-        }
-        
-        .era {
-            color: #1ba1e2	;
-            text-shadow: 0.3px 0.3px 0 rgb(83, 0, 0);
-            padding-left: 2%;
-        }
-        
-        .Title {
-            color: #1ba1e2	;
-            margin-left: 1.5%;
-        }
-        
-        .subTitle {
-            color: rgb(61, 61, 61);
-        }
-        
-        .clhr {
-            color: red;
-        }
-        
-        .pBar {
-            color: red;
-        }
-        
-        .myImage {
-            width: 90%;
-            padding: 0%;
-            margin-bottom: 0%;
-        }
-        
-        .footer {
-            background-color: #1ba1e2;
-        }
-        
-        .twitter {
-            color: royalblue;
-        }
-        
-        .myName {
-            font-family: 'Nunito', sans-serif;
-            font-weight: 600;
-            color: rgb(255, 255, 255);
-            background-color: #1ba1e2;
-            margin: 1%;
-            padding: 0%;
-            border: 10px;
-            border-color: black;
-        }
-        
-        .Refh4 {
-            margin-top: 0%;
-            margin-bottom: 0%;
-            padding-top: 0%;
-            padding-bottom: 0%;
-        }
-
-        .github {
-            color: black;
-        }
-        
-        .instagram {
-            color: rgb(255, 0, 98);
-        }
-        
-        .telegram {
-            color: rgb(248, 248, 248)
-        }
-        
-        .linkedin {
-            color: rgb(30, 43, 228)
-        }
-
-
-        
-        .SM {
-            size: 500px;
-        }
-        
-        .CV {
-            color: rgb(255, 255, 255);
-            background-color: #1ba1e2;
-            margin: 0%;
-            padding: 0%;
-            border: 0ch;
-        }
-        
-        .lang {
-            margin: 10px;
-            padding: 10px;
-        }
-        
-        .icon1 {
-            width: 60px;
-            height: 60px;
-            padding: 0%;
-            margin-left: 2%;
-        }
-        
-
-        
-        .icons {}
-        
-        .page {
-            margin: 40px;
-        }
-        
-        .PageName {
-            margin-top: 1%;
-        }
-        
-        .LeftCont {
-            padding-top: 1px;
-        }
-        
-        .Neuroscience {
-            margin-left: 10px;
-        }
-
-        
-        .z0-1 {
-            margin-left: 10px;
-        }
-        
-        .TEItem {
-            margin: 0%;
-            padding-left: 2%;
-        }
-        
-        .Title .footer .myName .CV .era {
-            background-color: #81c700;
-            color: #81c700;
-
-        }
-
-
-
-
-
-    </style>
-
-
-    <body class="w3-light-grey">
-
-        <!-- Page Container -->
-        <div class="w3-content w3-margin-top" style="max-width:1400px;">
-            
-            <!-- The Grid -->
-            <div class=" w3-container w3-card myName w3-round-large PageName">
-                <h1 class="myName w3-hover-opacity ">Seyed Soroush Majd</h1>
-            </div>
-
-            <div class="w3-row-padding">
-
-                <!-- Left Column -->
-                <div class="w3-third" >
-
-                    <div class="w3-white w3-hover-metro-light-blue w3-card-4 w3-round-large">
-
-                        <div class="w3-container" >
-                            <p class="TEItem" style="margin-top: 5%;">
-                                <i class="fa fa-briefcase fa-fw w3-margin-right w3-large ii w3-hover-opacity"></i>Master’s Graduate in Artificial Intelligence</p>
-                            <p class="TEItem">
-                                <i class="fa fa-home fa-fw w3-margin-right w3-large ii w3-hover-opacity"></i>Tehran, IRAN</p>
-                            
-                            <p class="TEItem">
-                                <i class="fa fa-envelope fa-fw w3-margin-right w3-large ii w3-hover-opacity"></i>soroushmajd98@gmail.com</p>
-                            <p class="TEItem">
-                                <i class="fa fa-phone fa-fw w3-margin-right w3-large ii w3-hover-opacity"></i>live:.cid.4755cb9cfdd62c77 (skype)</p>
-                            <hr>
-                            <p class="w3-large">
-
-                            <b class="Title w3-hover-opacity">Skills</b>
-                            </p>
-
-                            <ul style="text-align: justify; text-justify: inter-word;">
-                                <li><b>Programming Languages:</b>
-                                    <ul style="list-style-type:none">
-                                        <span>Python,</span>
-                                        <span>Matlab,</span>
-                                        <span>C++,</span>
-                                        <span>SQL;</span>
-                                                                                    
-                                    </ul>
-                                </li>
-                                <li><b>AI and Data Science:</b>
-                                    <ul style="list-style-type:none">
-                                        <span>PyTorch, </span>
-                                        <span>TensorFlow, </span>
-                                        
-                                        <span>NumPy, </span>
-                                        <span>Scikit-Learn, </span>
-                                        
-                                        
-                                        <span>Matplotlib, </span>
-                                        <span>Pandas, </span>
-                                        <span>PyTorch Metric Learning;</span>
-
-
-                                    </ul>
-                                </li>
-                                <li><b>Web Developement:</b>
-                                    <ul style="list-style-type:none">
-                                                                               
-                                        <span>HTML, </span>
-                                        <span>CSS;</span>
-                                        
-                                                                                
-                                    </ul>
-                                </li>
-                                <li><b>Hardware:</b>
-                                    <ul style="list-style-type:none">
-                                                                               
-                                        <span>Proteus, </span>
-                                        <span>Arduino, </span>
-                                        <span>Assembly, </span>
-                                        <span>Verilog;</span>
-                                                                                
-                                    </ul>
-                                </li>
-
-                                <!-- <li><b>Database Systems:</b>
-                                    <ul style="list-style-type:none">
-                                        <span>MySQL&nbsp;</span>
-                                    </ul>
-                                </li> -->
-
-                                
-
-                                <li><b>Miscellaneous:</b>
-                                    <ul style="list-style-type:none">
-                                        
-                                        <span>Git, </span>
-                                        <span>LaTeX;&nbsp;</span>                                                   
-                                    </ul>
-                                </li>
-                            </ul>
-                            <hr>
-
-                            <!--
-                            <img class=" icon1 w3-hover-opacity" src="Languages.png"></img>
-                            -->
-                            <b class="Title w3-hover-opacity">Languages</b>
-                            </b>
-                            </p>
-                            <p><b>Persian: Native</b></p>
-                            
-                            <hr>
-                            <p><b>English: Fluent  - TOEFL iBT: 101/120 (R: 26, L: 27, S:
-                                24, W: 24)</b></p>
-                            
-                            <div>
-                                
-
-                                
-                                
-                            </div>
-
-                            <hr>
-                        </div>
-                        <div class="w3-display-container LeftCont" style="margin-bottom: 1%; padding-bottom: 1%;">
-                            <a href="https://drive.google.com/file/d/10NAvnOgikUyfhDZd2Y5UzYMhlnRqwnjx/view?usp=sharing" style="text-decoration: none; display: block; text-align: center;">
-                                <span class="download-link">Download CV</span>
-                            </a>
-                        </div>
-                        <p class="w3-large">
-                    </div>
-                    <br>
-                    
-                    <!-- End Left Column -->
-                </div>
-
-                <!-- Right Column -->   
-                <div class="w3-twothird">
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class=" w3-padding-16">
-                            <!--<img class=" icon1 w3-hover-opacity" src="Education.png"></img>
-                            -->
-                                <b class="Title"> Education</b>
-                        </h2>
-                        <hr>
-
-                        <div class="w3-container">
-                            <a href="https://en.sbu.ac.ir/">
-                                <h4 class="subTitle" style="margin: 0%; padding:0%">
-                                    <b>Shahid Beheshti University, Tehran, Iran.</b>
-                                </h4>
-                            </a>
-
-                            <!--
-                                <p style="margin: 0%; padding:0%">(Iran’s largest Academic Institution)</p>
-                            -->
-                            <h7 class="">
-                                <b>M.Sc. in  Computer Science and Engineering - Artificial Intelligence</b>
-                            <br>    
-                            <b>Overall GPA</b>: <b>17.86</b>/20 (<b>4</b>/4)</b>
-                            <br>
-                                <b style="margin: 0%;">Thesis: </b>Improving Semantic Textual Similarity Using Deep Learning </br>
-                                </b>
-                                <a href="https://scholar.google.com/citations?user=BVAsKDsAAAAJ&hl=en#">
-                                <b class="subTitle" style="margin: 0%;">Supervisor: Dr. Mehrnoush Shamsfard</br>
-                                </a>
-                                </b>
-                            </h7>
-
-                            <h6 class="era " style="margin: 0%;">
-                                <i class="fa fa-calendar fa-fw w3-margin-right ii w3-hover-opacity"></i>[September 2021 – September 2024]</h6>
-                                                
-                            <hr>
-                        </div>
-
-
-
-
-                        <div class="w3-container">
-                            <a href="https://aut.ac.ir/en">
-                                <h4 class="subTitle" style="margin: 0%; padding:0%">
-                                    <b>Amirkabir University of Technology (Tehran Polytechnic), Tehran, Iran.</b>
-                                </h4>
-                            </a>
-
-                            <!--<p style="margin: 0%; padding:0%">(Ranked 2nd among all Iranian universities based on QS World University Rankings
-                                2021)</p>
-                            -->
-                            <h7 class="">
-                                <b>B.Sc. in Biomedical Engineering - Bioelectrics</b>
-                                <br>
-                                <b>Last Two Year's GPA:</b> <b>17.01</b>/20 (<b>3.68</b>/4)
-                                <br>
-                                <b>Overall GPA:</b> <b>16.05</b>/20 (<b>3.37</b>/4)</b>
-                                <br>
-                                <b style="margin: 0%;">Thesis:</b> Heart rate measurement and blood perfusion
-                                    mapping in parts of human body skin using rPPG</br>
-                                </b>
-                                <a href="https://scholar.google.com/citations?user=8VdS96oAAAAJ&hl=en">
-                                <b class="subTitle" style="margin: 0%;">Supervisor: Dr. Vahidreza Nafisi</br>
-                                </a>
-                                </b>
-                            </h7>
-
-                            <h6 class="era " style="margin: 0%;">
-                                <i class="fa fa-calendar fa-fw w3-margin-right ii w3-hover-opacity"></i>[2016 – 2021]</h6>
-                            
-                            <hr>
-                        </div>
-
-                        <!-- <div class="w3-container">
-                            <a href="https://nodet.net/">
-                                <h4 class="subTitle" style="margin: 0%; padding:0%">
-                                    <b style="margin: 0%; padding:0%">Allameh Helli High School</b>
-                                    
-                                </h4>
-                            </a>
-
-                            <h7 class="" style="margin: 0%; padding:0%">
-                                <b> Diploma in Physics and Mathematics</b></br>
-                                <b>Overall GPA:</b> <b>19.68</b>/20 </br>
-                            </h7>
-
-                            <h6 class="era " style="margin: 0%;">
-                                <i class="fa fa-calendar fa-fw w3-margin-right ii w3-hover-opacity"></i>[2012 – 2016]</h6>
-                                
-                                
-                                <p>Overall GPA:  out of 20</p>
-                            
-                            </br>
-                        </div> -->
-                    </div>
-                    
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class=" w3-padding-16">
-                            <!--
-                                <img class=" icon1 w3-hover-opacity" src="RESEARCH EXPERIENCES1.png"></img>
-                            -->
-                                <b class="Title">Research Interests</b>
-                        </h2>
-                        <style>
-                            .two-column-list {
-                                display: grid;
-                                grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-                            }
-                        </style>
-                        <hr>
-                        <ul class="two-column-list">
-                            <li><b>Natural Language Processing</b></li>
-                            <li><b>Machine Learning</b></li>
-                            <li><b>Deep Learning</b></li>
-                            <li><b>Trustworthy AI</b></li>
-                        </ul>
-                        <hr>
-                        
-                    </div>
-
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class="w3-text-grey w3-padding-16">
-                            <!--
-                                <img class=" icon1 w3-hover-opacity" src="Teaching Experience.png"></img>
-                            -->
-                                <b class="Title">Teaching Experience</b>
-                        </h2>
-                        <!--
-                            <p class="TEItem">
-                                Department Computer Engineering, Amirkabir University of Technology</b>
-                            </p>
-                        -->
-                        <!-- <div class="w3-container">
-                            <h6 class="subTitle"><b>Teaching Assistant: <span class="TA-CName">Introduction to Machine Learning</span></b></h6>
-                            <p class="TEItem">Instructor: Dr. Hamed Malek</p class="TEItem">
-                            <h6 class="era">
-                                <i class="fa fa-calendar fa-fw w3-margin-right ii w3-hover-opacity"></i> <b>[Spring 2024]</b>
-                            </h6> -->
-
-
-                        <hr>
-                        <div class="w3-container">
-                            <h6 class="subTitle"><b>Teaching Assistant: <span class="TA-CName">Introduction to Machine Learning</span></b></h6>
-                            <p class="TEItem">Instructor: Dr. Hamed Malek</p class="TEItem">
-                            <h6 class="era">
-                                <i class="fa fa-calendar fa-fw w3-margin-right ii w3-hover-opacity"></i> <b>[Spring 2024]</b>
-                            </h6>
-                            <hr>
-                            <h6 class="subTitle"><b>Teaching Assistant: <span class="TA-CName">Computer Architecture</span></b></h6>
-                            <p class="TEItem">Instructor: Dr. Hamed Farbeh</p class="TEItem">
-                            <h6 class="era">
-                                <i class="fa fa-calendar fa-fw w3-margin-right ii w3-hover-opacity"></i> <b>[Spring 2022]</b>
-                            </h6>
-
-                            <hr>
-                            <h6 class="subTitle"><b>Teaching Assistant: <span class="TA-CName">Microprocessors and Assembly Language</span></b></h6>
-                            <p class="TEItem">Instructor: Dr. Hamed Farbeh</p class="TEItem">
-                            <h6 class="era">
-                                <i class="fa fa-calendar fa-fw w3-margin-right ii w3-hover-opacity"></i> <b>[Fall 2019]</b>
-                            </h6>
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class=" w3-padding-16">
-                            <b class="Title">Publications</b>
-                        </h2>
-                        <div class="w3-container">
-                            <hr>
-                        
-                            
-                            <h6>
-                                <b>FaBERT: Pre-training BERT on Persian Blogs</b> 
-                                <a href="https://arxiv.org/abs/2402.06617"><img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
-                                <!-- <p>Participating in the ongoing BERT pretraining project using the HmBlogs corpus to advance Persian NLP. Contributing to data preprocessing, model fine-tuning, and model performance evaluation with the ultimate goal of completing the HmBlogs paper.</p> -->
-                            </h6>
-                            <hr>
-                            <h6>
-                                <b>hmBlogs: A Comprehensive Corpus and Benchmarking Study for Persian Word Embedding and Language Modeling (Submitted to SN Computer Science)</b> 
-                                
-                                <!-- <a> <img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a> -->
-                                <!-- <p>Participating in the ongoing BERT pretraining project using the HmBlogs corpus to advance Persian NLP. Contributing to data preprocessing, model fine-tuning, and model performance evaluation with the ultimate goal of completing the HmBlogs paper.</p> -->
-                            </h6>
-                            <hr>
-                            <h6>
-                                <b>Improving Generalization in Deep Metric Learning through Intra-Class FineGrained Features and Supervised Triplet Sampling (In Revision)</b> 
-                                <!-- <a> <img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a> -->
-                                <!-- <p>Participating in the ongoing BERT pretraining project using the HmBlogs corpus to advance Persian NLP. Contributing to data preprocessing, model fine-tuning, and model performance evaluation with the ultimate goal of completing the HmBlogs paper.</p> -->
-                            </h6>
-                            <hr>
-                            <h6>
-                                <b>Evaluating LLMs in Persian News Summarization (Accepted to IKT 2024)</b> 
-                                <!-- <a> <img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a> -->
-                                <!-- <p>Participating in the ongoing BERT pretraining project using the HmBlogs corpus to advance Persian NLP. Contributing to data preprocessing, model fine-tuning, and model performance evaluation with the ultimate goal of completing the HmBlogs paper.</p> -->
-                            </h6>
-                            <hr>
-                            <h6>
-                                <b>Cluster Sampling: A Cluster-Driven Sampling Strategy for Deep Metric Learning (Accepted to ICCKE 2024)</b> 
-                                <!-- <a> <img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a> -->
-                                <!-- <p>Participating in the ongoing BERT pretraining project using the HmBlogs corpus to advance Persian NLP. Contributing to data preprocessing, model fine-tuning, and model performance evaluation with the ultimate goal of completing the HmBlogs paper.</p> -->
-                            </h6>
-                            <hr>                                                        
-                        </div>
-                        
-                    </div>
-                    
-
-
-
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class=" w3-padding-16">
-                            <b class="Title">Research Experience</b>
-                        </h2>
-                        <hr>
-
-                        <ol type="1">
-                            <li>
-                                <b>France Underground Water Level Assessment</b> 
-                                <img src="https://img.shields.io/badge/-Research Assistant-green"></img>
-                                <p>Analyzing underground water levels across France in collaboration with BRGM (French Geological Survey), contributing to sustainable water resource management.</p>
-                            </li>
-                            <hr>
- 
-                            <li>
-                                <b>FarsEval: Benchmarking Large Language Models for Persian NLP</b> 
-                                <img src="https://img.shields.io/badge/-Research Assistant-green"></img>
-                                <p>Comprehensive evaluation of LLMs in summarization, analogy testing, formality style transfer, and additional Persian NLP benchmarks.</p>
-                            </li>
-                            <hr>
-                            
-                                                        
-                            <li>
-                                <b>Improving Semantic Textual Similarity Using Deep Learning</b> 
-                                <img src="https://img.shields.io/badge/-M.Sc. Thesis-8A2BE2"></img>
-                                <a href="https://drive.google.com/file/d/1D2xBkkg0LPzqALJSEpzRPENNenmDPlzI/view"><img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
-                                <p>Improving clinical Semantic Textual Similarity (STS) using metric learning. Developing training strategies to enhance model representation to overcome challenges such as generalization, limited clinical data, and robustness.</p>
-                            </li>
-                            <hr>
-                            <li>
-                                <b>Multi-Wavelength Video-Based Blood Perfusion Mapping in Human Body Skin using rPPG</b> 
-                                
-                                <img src="https://img.shields.io/badge/-Research Assistant-green"></img>
-                                <p>Researched different rPPG (Remote Photoplethysmography) signal extraction methods using videos from the skin at different light wavelengths to map blood flow below the skin with the cooperation of The Color and Visual Computing Laboratory (Colourlab) at the Norwegian University of Science and Technology (NTNU).</p>
-
-                            </li>
-                            <hr>
-                            <li>
-                                <b>Heart Rate Measurement and Blood Perfusion Mapping in Parts of Human Body Skin using rPPG</b>
-                                <img src="https://img.shields.io/badge/-B.Sc. Thesis-22cccc"></img>
-                                <a href="https://drive.google.com/file/d/1rT8IuDQUG-BEC2bbgAKp4utJfjLqa896/view?usp=sharing"><img src="https://img.shields.io/badge/-PDF-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
-                                <p>Estimated the heart rate and mapped blood flow below the skin using facial videos with a non-invasive method called rPPG. Involves detecting the Region of Interest (ROI) (using Neural Network, Thresholding, and Manual Selection), extracting the rPPG signal from the ROI (using two methods of calculating the average pixel intensity and Independent Component Analysis (ICA)), and calculating the Fourier Transform of the rPPG signal to identify the frequency with the highest amplitude as the estimated heart rate.</p>
-                            </li>
-
-
-                            
-                        </ol>
-                    </div>
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large" >
-                        <h2 class=" w3-padding-16">
-                            <b class="Title">Selected Coursework</b>
-                        </h2>
-                        <hr>
-                        <div style="column-count:1; padding-bottom: 1%;">
-                            <ul type="1">
-                                
-                                <li><b>Interpretable AI</b> (Visiting student at <b>University of Tehran</b>) [M.Sc.] (<b>19.4</b>/20) <a href="https://drive.google.com/file/d/1kOTAV5CcJhq2D4bDK38LNl9KbVjxtfe5/view?usp=sharing"><img src="https://img.shields.io/badge/-ABET-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a></li> 
-                                <li><b>Knowledge and Ontology Engineering</b> [M.Sc.] (<b>19.25</b>/20)</li>
-                                <li><b>Principles of Algoriths</b> (Visiting student at <b>K. N. Toosi University of Technology</b>) [B.Sc.] (<b>20</b>/20)</li>
-                                <li><b>Digital Signal Processing</b> [M.Sc.] (<b>19</b>/20)</li>
-                                <li><b>Deep Learning</b>  [M.Sc.] (<b>17.3</b>/20)</li>
-                                <li><b>Machine Learning</b> [M.Sc.] (<b>16.8</b>/20)</li>
-                                <li><b>Linear Control Systems</b> [B.Sc.] (<b>19</b>/20)</li>
-                                <li><b>Pattern Recognition</b> [M.Sc.] (<b>16.75</b>/20)</li>
-                                <li><b>Natural Language Processing</b> [M.Sc.] (<b>17</b>/20)</li>
-                                <li><b>Data Structure and Algorithms</b> [B.Sc.] (<b>17</b>/20)</li>
-                                <li><b>Principles of Rehabilitation</b> [B.Sc.] (<b>18.05</b>/20)</li>
-                                
-
-
-
-                                <!-- <li>B.Sc. Thesis (<b>20</b>/20)</li> -->
-                                <!-- <li>B.Sc. Internship (<b>19</b>/20)</li> -->
-                                <!-- <li>Startup Development (<b>20</b>/20)</li> -->
-                                <!-- <li>Embdded and Real-Time Systems (<b>20</b>/20)</li> -->
-                                <!-- <li>Internet of Things (<b>19</b>/20)</li> -->
-                                <!-- <li>Computer Graphics	(<b>19.5</b>/20)</li> -->
-                                <!-- <li>Research and Technical Presentation	(17/20)</li> -->
-                                <!-- <li>Technical English	(17/20)</li> -->
-                                <!-- <li>English for the Students of Engineering	(16.5/20)</li> -->
-                                <!-- <li>Differential Equations	(16.9/20)</li> -->
-
-                            </ul>
-                        </div>
-                        
-                    </div>
-
-
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class=" w3-padding-16">
-                            <!--
-                                <img class=" icon1 w3-hover-opacity" src="PUBLICATIONS.png"></img>
-                            -->
-                                <b class="Title">Notable Projects </b>
-                        </h2>
-                        <hr>
-
-                        <ol type="1">
-                            <li>
-                                Robust FAQ Question Answering using Metric Learning (Angular Loss) and SPARQL-Based Ontology Querying
-                                <img src="https://img.shields.io/badge/-Ontology and Knowledge Engineering-008080"></img>
-                                <a href="https://github.com/soroushmajd/FAQ-Ontology"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-                                <a href="https://drive.google.com/file/d/1o8GV2zIeXCPyvBZEqiIKwIXxRe1foEO-/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
-
-                            </li>
-                            <li>
-                                Evaluating Fairness, Backdoor Attack, and Out-Of-Distribution Detection in ResNet18 Image Classification
-                                <img src="https://img.shields.io/badge/-Trustworthy AI-FF00FF"></img>
-                                <a href="https://github.com/soroushmajd/FAQ-Ontology"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-                                <a href="https://drive.google.com/file/d/17-kKOAMbBDDewIjYf3D-kHwBwjNxQM7k/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
-
-                            </li>
-                            <li>
-                                Model Interpretation using SHAP for Regression (MLP) and LIME for Image Classification (MobileNet v2)
-                                <img src="https://img.shields.io/badge/-Trustworthy AI-FF00FF"></img>
-                                <a href="https://github.com/soroushmajd/LIME-SHAP-Interpretable-AI"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-                                <a href="https://drive.google.com/file/d/1HxKV7nLtW5QYmVqswR4KFYO-LDhBhvAt/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
-
-                            </li>
-                            <li>
-                                Enhancing Robustness and Generalization in ResNet18 Classification with Angular Loss on Limited Training Data (20% of CIFAR-10 dataset)
-                                <img src="https://img.shields.io/badge/-Trustworthy AI-FF00FF"></img>
-                                <a href="https://github.com/soroushmajd/Robustness-Generalization-Interpretable-AI"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-                                <a href="https://drive.google.com/file/d/1eeMJGc9hbivT2JYX9hW_spXZ2QwaQz-L/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
-
-                            </li>
-                            <li>
-                                Question Answering Using Cosine Similarity Between Input Questions and Constructed Sentences (Subject, Object, Predicate) from the RDF Ontology
-                                <img src="https://img.shields.io/badge/-Ontology and Knowledge Engineering-008080"></img>
-                                <a href="https://github.com/soroushmajd/QA-Subject-Object-Predicate"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-                                <a href="https://drive.google.com/file/d/1o8GV2zIeXCPyvBZEqiIKwIXxRe1foEO-/view?usp=sharing"><img src="https://img.shields.io/badge/-Report in English-informational?logo=Adobe Acrobat Reader&logoColor=white&labelColor=red"></img></a>
-
-                            </li>
-                            <li>
-                                Comparing Performance of Contextual and Static Embeddings in Analogical Reasoning Tasks
-                                <img src="https://img.shields.io/badge/-Natural Language Processing-800000"></img>
-                                <a href="https://github.com/soroushmajd/Analogy-NLI-NLP"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-
-                            </li>
-                            <li>
-                                Image Colorization with Convolutional Neural Network
-                                <img src="https://img.shields.io/badge/-Deep Learning-FFD700"></img>
-                                <a href="https://github.com/soroushmajd/Image-Colorization-with-Convolutional-Neural-Network"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-
-                            </li>
-                            <li>
-                                Tata Steel Ltd. Stock Price Prediction Using Hidden Markov Model
-                                <img src="https://img.shields.io/badge/-Machine Learning-E6E6FA"></img>
-                                <a href="https://github.com/soroushmajd/Stock-Price-Prediction-Using-HMM"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-
-                            </li>
-                            <li>
-                                Text Classification on WELFake Dataset with BERT and RoBERTa
-                                <img src="https://img.shields.io/badge/-Deep Learning-FFD700"></img>
-                                <a href="https://github.com/soroushmajd/FN-Text-Classification"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-
-                            </li>
-                            <li>
-                                Multi-Layer Perceptron for Sign Language Image Classification
-                                <img src="https://img.shields.io/badge/-Deep Learning-FFD700"></img>
-                                <a href="https://github.com/soroushmajd/Multi-Layer-Perceptron-for-Image-Classification"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-
-                            </li>
-                            <li>
-                                Human Activity Recognition with CNN-LSTM
-                                <img src="https://img.shields.io/badge/-Neural Networks-FF6B6B"></img>
-                                <a href="https://github.com/soroushmajd/Human-Activity-Recognition-with-CNN-LSTM-and-Bi-directional-CNN-LSTM"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-
-                            </li>
-                            <li>
-                                Google Stock Price Prediction Based on GRU and LSTM models
-                                <img src="https://img.shields.io/badge/-Deep Learning-FFD700"></img>
-                                <a href="https://github.com/soroushmajd/Google-Stock-Price-Prediction-with-GRU-and-LSTM"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-
-                            </li>
-                            <li>
-                                Earthquake Prediction in Iran
-                                <img src="https://img.shields.io/badge/-Machine Learning-E6E6FA"></img>
-                                <a href="https://github.com/soroushmajd/Earthquake-Prediction-using-Machine-Learning-Techniques"><img src="https://img.shields.io/badge/-Github  -informational?logo=GitHub&logoColor=white&labelColor=black"></img></a>
-
-                            </li>
-                            <li>
-                                Baseline Wander Removal in ECG Signals Using FIR Filter, IIR Filter, EMD, Moving Average, and Wavelet Transform
-                                <img src="https://img.shields.io/badge/-Digital Signal Processing-black"></img>
-
-                            </li>
-                            <li>
-                                Comparing Object Recognition in Humans and Deep Convolutional Neural Networks Based on Kay et al. (2008)
-                                <img src="https://img.shields.io/badge/-Neuromatch Academy-40E0D0"></img>
-
-                            </li>
-                        </ol>
-                        <hr>
-                    </div>
-
-                    
-                    
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class=" w3-padding-16">
-                            <!--<img class=" icon1 w3-hover-opacity" src="HONORS AND AWARDS.png"></img>
-                            -->
-                                <b class="Title">Honors and Awards</b>
-                        </h2>
-                        <hr>
-
-                        <ul style="list-style-type:circle;">
-                            <li>
-                                Achieved top 1% place among all applicants of the Nationwide University Entrance Exam (Konkour) for B.Sc. in Engineering among 162,879 applicants, Iran, 2016.
-                            </li>
-                            
-                            <li>
-                                Member of National Organization for Development of Exceptional
-                                Talents (NODET), Tehran, Iran, 2012--2016.
-                            </li>
-                        </ul>
-                        <hr>
-                    </div>
-
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class=" w3-padding-16">
-                            <!--
-                                <img class=" icon1 w3-hover-opacity" src="HOBBIES.png">
-                            -->
-                                <b class="Title">Hobbies</b>
-                        </h2>
-                        <hr>
-                        <ul style="list-style-type:circle;">
-                            <li>
-                                Roller Skating
-                            </li>
-                            <li>
-                                Working Out
-                            </li>
-                            <li>
-                                Gaming
-                            </li>
-                        </ul>
-                        <hr>
-                    </div>
-
-
-                    <div class="w3-container w3-card w3-white w3-margin-bottom w3-round-large">
-                        <h2 class=" w3-padding-16" style="margin-bottom: 0%; padding-bottom:0%;">
-                            <!--<img class=" icon1 w3-hover-opacity" src="REFERENCES.png"></img>
-                            -->
-                                <b class="Title" style="margin-bottom: 0%; padding-bottom:0%;">References</b>
-                        </h2>
-                        <div class="lang" style="margin-top: 0%; padding-top:0%;">
-                            <p>
-                                <hr>
-                                <a href="https://scholar.google.com/citations?hl=en&user=BVAsKDsAAAAJ&view_op=list_works&sortby=pubdate">
-                                    <h4 class="Refh4">
-                                        Mehrnoush Shamsfard
-                                    </h4>
-                                </a>
-                                Associate Professor at Computer Science and Engineering Department, Shahid Beheshti University
-                                <br> Email: m-shams@sbu.ac.ir
-                                <br>
-                                <hr>
-                                <a href="https://scholar.google.com/citations?user=8VdS96oAAAAJ&hl=en">
-                                    <h4 class="Refh4">
-                                        Vahidreza Nafisi
-                                    </h4>
-                                </a>
-                                Associate Professor at Biomedical Engineering Department, Amirkabir University of Technology
-                                <br> Email: vr_nafisi@irost.org
-                                <br>
-                                <hr>
-                                
-                                <a href="https://ceit.aut.ac.ir/~farbeh/">
-                                    <h4 class="Refh4">
-                                        Hamed Farbeh
-                                    </h4>
-                                </a>
-                                Assistant Professor at Computer Engineering and IT Department, Amirkabir University of Technology
-                                <br> Email: farbeh@aut.ac.ir
-                                <br>
-                                <hr>
-                                <hr>
-                                <a href="https://scholar.google.com/citations?user=BrxRchIAAAAJ&hl=en">
-                                    <h4 class="Refh4">
-                                        Ahmad Ali Abin
-                                    </h4>
-                                </a>
-                                Associate Professor at Computer Science and Engineering Department, Shahid Beheshti University
-                                <br> Email: a_abin@sbu.ac.ir
-                                <br>
-                                <hr>                                
-
-                                
-
-
-                          
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Right Column -->
-            </div>
-            <!-- End Grid -->
-            
-            <div class=" w3-container w3-card w3-center myName w3-round-large PageName" style="margin-bottom: 1%; margin-top: 0%;">
-                <h4 style="color: aliceblue; margin-top: 1%;">Find me on social media</h4>
+<body data-theme="day">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="page">
+    <header id="siteHeader" role="banner">
+      <div class="header-top">
+        <h1>Soroush Majd</h1>
+      </div>
+
+      <nav class="toc" aria-label="Contents" role="navigation">
+        <a href="https://drive.google.com/file/d/15uenvwgkXemXWVRyeq5PZ_1LP3lYBQWH/view?usp=sharing"
+           class="cv-pill" target="_blank" rel="noopener noreferrer" aria-label="Download CV as PDF">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="" loading="lazy"/> CV (PDF)
+        </a>
+        <a href="#education" id="toc-education">Education</a>
+        <a href="#publications" id="toc-publications">Publications</a>
+        <a href="#research" id="toc-research">Research</a>
+        <a href="#teaching" id="toc-teaching">Teaching</a>
+        <a href="#projects" id="toc-projects">Projects</a>
+        <a href="#coursework" id="toc-coursework">Coursework</a>
+        <a href="#honors" id="toc-honors">Honors</a>
+        <a href="#references" id="toc-references">References</a>
+      </nav>
+    </header>
     
-                <a href="https://github.com/soroushmajd">
-                    <i class="fa fa-github w3-hover-opacity github SM w3-xxxlarge">. </i>
-                </a>
-                <a href="https://www.linkedin.com/in/soroush-majd/">
-                    <i class="fa fa-linkedin w3-hover-opacity linkedin SM w3-xxxlarge">. </i>
-                </a>
-                <a href="https://t.me/SoroushMajd" style="margin-bottom: 2%;">
-                    <i class="fa fa-telegram w3-hover-opacity telegram SM w3-xxxlarge" style="margin-bottom: 1%;">. </i>
-                </a>
-                
-                <div style="width:0.01%; height: 2.1%;">
-                    <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=wE8H15Ij15ItKyECBs-J2HHCn8LkfqCzKK-deq-fGyI&cl=ffffff&w=a"></script>
-                </div>
-                <p style="color: aliceblue;">Powered by
-                    <a style="color: rgb(217, 255, 0);" href="https://github.com/varaste" target="_blank">Arya Varaste</a>
-                </p> 
+    <main class="layout" id="content" role="main">
+      <aside class="col" aria-label="Sidebar">
+        <!-- Buttons only -->
+        <section id="contact" class="card" aria-label="Contact">
+          <div class="contact-grid" style="display:grid; gap:10px; grid-template-columns:1fr;">
+            <a class="btn gs block" href="https://scholar.google.com/citations?hl=en&user=ib2ItgkAAAAJ&view_op=list_works&gmla=AH8HC4yk_LFFsakydKuswSy8g13abaENrFqhhoXrPnm4R7gNRKNMpJyumr2mU2RIggYj2xjr9AQ2Dv_X5Yx9dLMyiwLe9lESftogxO0evMLMgC3eqhjjztyHCe3uBe3lMFO78Xso1VXgTAl7pgcoo3v274wlVWcH4c4s76tn0RR7j7A&sciund=16009955940405637836"
+               target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="#1a73e8" d="M12 3 2 8l10 5 8-4.05V15h2V8L12 3z"/>
+                <path fill="#1a73e8" d="M6 12.5V17c0 2.21 3.58 4 6 4s6-1.79 6-4v-4.5l-6 3-6-3z"/>
+              </svg>
+              Google Scholar
+            </a>
+
+            <a class="btn gmail block" href="mailto:soroushmajd98@gmail.com" aria-label="Email">
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="#d93025" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/>
+              </svg>
+              Email
+            </a>
+
+            <a class="btn gh block" href="https://github.com/soroushmajd" target="_blank" rel="me noopener noreferrer" aria-label="GitHub">
+              <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
+                .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
+                -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27
+                1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15
+                0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+                0 .21.15.46.55.38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+              GitHub
+            </a>
+
+            <a class="btn li block" href="https://www.linkedin.com/in/soroush-majd/" target="_blank" rel="me noopener noreferrer">
+              <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="" loading="lazy"/> LinkedIn
+            </a>
+            <a class="btn tg block" href="https://t.me/SoroushMajd" target="_blank" rel="noopener noreferrer">
+              <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Telegram_2019_Logo.svg" alt="" loading="lazy"/> Telegram
+            </a>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="panel boxed" aria-labelledby="skills-title">
+          <h2 id="skills-title">Skills</h2>
+
+          <article class="edu" aria-label="Programming Languages">
+            <div class="head">
+              <h3 class="where">Programming Languages</h3>
             </div>
-            <footer class="w3-container footer w3-center w3-margin-top w3-card-4 w3-round-large">
-                
-                
+            <ul class="items">
+              <li>Python</li><li>MATLAB</li><li>C++</li><li>SQL</li>
+            </ul>
+          </article>
 
-    
-            </footer>
-        </div>
-        <!-- End Page Container -->
+          <article class="edu" aria-label="AI and Data Science">
+            <div class="head">
+              <h3 class="where">AI and Data Science</h3>
+            </div>
+            <ul class="items">
+              <li>PyTorch</li><li>TensorFlow</li><li>scikit-learn</li><li>NumPy</li><li>Pandas</li>
+              <li>Matplotlib</li><li>spaCy</li><li>NLTK</li><li>PyTorch Metric Learning</li><li>Hugging Face</li><li>Sentence Transformers</li>
+              <li>FAISS</li><li>Milvus</li>
+              <li>LangChain</li><li>LangGraph</li><li>LlamaIndex</li><li>Llama-Factory</li>
+              
+            </ul>
+          </article>
 
-        </div>
+          <article class="edu" aria-label="Web Development">
+            <div class="head">
+              <h3 class="where">Web Development</h3>
+            </div>
+            <ul class="items">
+              <li>HTML</li><li>CSS</li>
+            </ul>
+          </article>
+
+          <article class="edu" aria-label="Deployment">
+            <div class="head">
+              <h3 class="where">Deployment</h3>
+            </div>
+            <ul class="items">
+              <li>Docker</li><li>vLLM</li><li>Ollama</li>
+            </ul>
+          </article>
+
+          <article class="edu" aria-label="Hardware">
+            <div class="head">
+              <h3 class="where">Hardware</h3>
+            </div>
+            <ul class="items">
+              <li>Proteus</li><li>Arduino</li><li>Verilog</li><li>Assembly</li><li>LTspice</li>
+            </ul>
+          </article>
+
+          <article class="edu" aria-label="Miscellaneous">
+            <div class="head">
+              <h3 class="where">Miscellaneous</h3>
+            </div>
+            <ul class="items">
+              <li>Git</li><li>Bash</li><li>LaTeX</li>
+            </ul>
+          </article>
         
+        </section>
 
 
-    </body>
+		<!-- Languages -->
+		<section id="languages" class="panel boxed" role="list">
+			<h2>Languages</h2>
+			<ul class="lang-list">
+
+				<li class="lang">
+					<div class="lang-head">
+						<span class="lang-name">Persian</span>
+						<span class="lang-level">Native</span>
+					</div>
+				</li>
+
+				<li class="lang">
+					<div class="lang-head">
+						<span class="lang-name">English</span>
+						<span class="lang-level">Fluent</span>
+					</div>
+					<div class="meta">
+						<span class="pill">TOEFL iBT: 101/120 (R: 26, L: 27, S: 24, W: 24) — Nov 2023</span>
+					</div>
+                    <div class="meta">
+						<span class="pill">TOEFL iBT: 97/120 (R: 24, L: 26, S: 23, W: 24) — Oct 2025</span>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+
+
+      </aside>
+
+      <div class="col">
+
+        <!-- Research Interests -->
+        <section id="interests" class="panel boxed" aria-label="Research interests">
+          <h2>Research Interests</h2>
+          <div class="edu">
+            <div class="grid" role="list">
+              <div class="row" role="listitem">
+                <ul class="items" aria-label="Research interest chips">
+                  <li>NLP</li>
+                  <li>Deep Learning</li>
+                  <li>Machine Learning</li>
+                  <li>Trustworthy AI</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="panel boxed">
+          <h2>Education</h2>
+          
+
+          <article class="edu" aria-label="Shahid Beheshti University" class="section-box">
+            
+            <div class="head">
+              <h3 class="where">
+                <a href="https://www.topuniversities.com/universities/shahid-beheshti-university-sbu" target="_blank" rel="noopener noreferrer">
+                  Shahid Beheshti University, Tehran, Iran
+                </a>
+              </h3>
+              <div class="when"><time datetime="2021-09">Sep 2021</time> – <time datetime="2024-09">Sep 2024</time></div>
+            </div>
+            <div class="role">M.Sc., Computer Science &amp; Engineering — Artificial Intelligence</div>
+            <div class="meta">
+              <div><strong>GPA:</strong> <strong>17.87</strong>/20 (<strong>4</strong>/4 via iGPA/WES)</div>
+              <div><strong>Thesis:</strong> Improving Clinical Semantic Textual Similarity Using Deep Learning</div>
+              <div><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=BVAsKDsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Mehrnoush Shamsfard</a></div>
+            </div>
+            
+          </article>
+
+          <article class="edu" aria-label="Amirkabir University of Technology" class="section-box">
+            <div class="head">
+              <h3 class="where">
+                <a href="https://www.topuniversities.com/universities/amirkabir-university-technology" target="_blank" rel="noopener noreferrer">
+                  Amirkabir University of Technology (Tehran Polytechnic), Tehran, Iran
+                </a>
+              </h3>
+              <div class="when"><time datetime="2016">Sep 2016</time> – <time datetime="2021">Sep 2021</time></div>
+            </div>
+            <div class="role">B.Sc., Biomedical Engineering — Bioelectrics</div>
+            <div class="meta">
+              <div><strong>Overall GPA:</strong> 16.04/20 (<strong>3.37</strong>/4)</div>
+              <div><strong>Thesis:</strong> Heart rate measurement &amp; blood perfusion mapping in skin using rPPG</div>
+              <div><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=8VdS96oAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Vahidreza Nafisi</a></div>
+            </div>
+          </article>
+        </section>
+
+        <section id="publications" class="panel boxed">
+          <h2>Publications</h2>
+          <div class="edu">
+            <ol class="pubs">
+
+              <li class="pub" itemscope itemtype="https://schema.org/CreativeWork">
+                <div>
+                  <strong itemprop="name">Fine-Tuning OPT, Mistral, and LLaMA for Paraphrase-Robust Clinical Semantic Textual Similarity using Deep Metric Learning.</strong>
+                  <span class="authorship">• First Author</span>
+                  <span class="status">Ongoing research (expected January 2026)</span>
+                </div>
+              </li>
+
+              <li class="pub" itemscope itemtype="https://schema.org/CreativeWork">
+                <div>
+                  <strong itemprop="name">Trends and Shifts in Groundwater Levels Across Metropolitan France.</strong>
+                  <span class="authorship">• First Author</span>
+                  <span class="status">
+                    Under review at <em>Scientific Reports</em>
+                    <span class="badge access" title="Not publicly available" style="margin-left:6px;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;position:relative;top:-1.1px;">
+                      <svg class="icon" viewBox="0 0 24 24" style="width:17px;height:17px;">
+                        <path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/>
+                      </svg>
+                      Access upon request
+                    </span>
+                  </span>
+                </div>
+              </li>
+
+              <li class="pub" itemscope itemtype="https://schema.org/ScholarlyArticle">
+                <div>
+                  <strong itemprop="name">FaBERT: Pre-training BERT on Persian Blogs.</strong>
+                  <span class="authorship">• Second Author</span>
+                  <span class="venue" itemprop="isPartOf">
+                    Proceedings of the NAACL Workshop on Noisy User-generated Text (W-NUT), 2025
+                    <a class="btn pdf small" href="https://aclanthology.org/2025.wnut-1.10/" target="_blank" rel="noopener noreferrer" style="margin-left:6px;text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;position:relative;top:-1.1px;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="" style="width:17px;height:17px;">ACL
+                    </a>
+                  </span>
+                </div>
+              </li>
+
+              <li class="pub" itemscope itemtype="https://schema.org/CreativeWork">
+                <div>
+                  <strong itemprop="name">hmBlogs: A Comprehensive Corpus and Benchmarking Study for Persian Language Embeddings.</strong>
+                  <span class="authorship">• Fourth Author</span>
+                  <span class="status">
+                    Under review at SN Computer Science
+                    <span class="badge access" title="Not publicly available" style="margin-left:6px;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;position:relative;top:-1.1px;">
+                      <svg class="icon" viewBox="0 0 24 24" style="width:17px;height:17px;">
+                        <path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/>
+                      </svg>
+                      Access upon request
+                    </span>
+                  </span>
+                </div>
+              </li>
+
+              <li class="pub" itemscope itemtype="https://schema.org/CreativeWork">
+                <div>
+                  <strong itemprop="name">Intra Class Feature Learning and Supervised Triplet Sampling for Deep Metric Learning</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <span class="authorship" style="margin-left:60px;">• Third Author</span>
+                  <span class="status">
+                    Under review at IKT 2026
+                    <span class="badge access" title="Not publicly available" style="margin-left:6px;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;position:relative;top:-1.1px;">
+                      <svg class="icon" viewBox="0 0 24 24" style="width:17px;height:17px;">
+                        <path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/>
+                      </svg>
+                      Access upon request
+                    </span>
+                  </span>
+                </div>
+              </li>
+
+              <li class="pub" itemscope itemtype="https://schema.org/ScholarlyArticle">
+                <div>
+                  <strong itemprop="name">Evaluating LLMs in Persian News Summarization.</strong>
+                  <span class="authorship">• Fourth Author</span>
+                  <span class="venue" itemprop="isPartOf">
+                    2024 15th International Conference on Information and Knowledge Technology (IKT)
+                    <a class="btn pdf small" href="https://ieeexplore.ieee.org/document/10892758/" target="_blank" rel="noopener noreferrer" style="margin-left:6px;text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;position:relative;top:-1.1px;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="" style="width:17px;height:17px;">IEEE
+                    </a>
+                  </span>
+                </div>
+              </li>
+
+              <li class="pub" itemscope itemtype="https://schema.org/ScholarlyArticle">
+                <div>
+                  <strong itemprop="name">FarsEval-PKBETS: A New Diverse Benchmark for Evaluating Persian Large Language Models.</strong>
+                  <span class="authorship">• Fourteenth Author</span>
+                  <span class="venue" itemprop="isPartOf">
+                    arXiv:2504.14690
+                    <a class="btn pdf small" href="https://arxiv.org/abs/2504.14690" target="_blank" rel="noopener noreferrer" style="margin-left:6px;text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;position:relative;top:-1.1px;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="" style="width:17px;height:17px;">arXiv
+                    </a>
+                  </span>
+                </div>
+              </li>
+
+              <li class="pub" itemscope itemtype="https://schema.org/ScholarlyArticle">
+                <div>
+                  <strong itemprop="name">Cluster Sampling: A Cluster-Driven Sampling Strategy for Deep Metric Learning.</strong>
+                  <span class="authorship">• Third Author</span>
+                  <span class="venue" itemprop="isPartOf">
+                    2024 14th International Conference on Computer and Knowledge Engineering (ICCKE)
+                    <a class="btn pdf small" href="https://ieeexplore.ieee.org/document/10874603" target="_blank" rel="noopener noreferrer" style="margin-left:6px;text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;position:relative;top:-1.1px;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="" style="width:17px;height:17px;">IEEE
+                    </a>
+                  </span>
+                </div>
+              </li>
+
+            </ol>
+          </div>
+        </section>
+
+        <section id="research" class="panel boxed">
+          <h2>Research Experience</h2>
+
+          <article class="edu" aria-label="France Underground Water Level Assessment">
+            <div class="head">
+              <h3 class="where">France Underground Water Level Assessment — BRGM</h3>
+              <div class="when"><time datetime="2024">2024</time></div>
+            </div>
+            <p style="text-align:justify;">
+              Conducted statistical analysis of underground water levels from piezometer networks across Metropolitan France in collaboration with <em>BRGM (French Geological Survey)</em> to support sustainable water resource management. Designed and implemented data pipelines for long-term hydrological records, developed visualizations, and interpreted basin-level trends and anomalies to inform decision-making.           </p>
+            <p style="margin-top:6px;">
+              <!-- <a href="https://arxiv.org/abs/2504.14690" target="_blank" rel="noopener noreferrer" style="margin-right:8px;text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;"> -->
+                <svg class="icon" viewBox="0 0 24 24" style="width:17px;height:17px;">
+                        <path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/>
+                      </svg>
+                      Access upon request
+              
+            <p><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=BrxRchIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Ahmad Ali Abin</a></p>
+            
+        </p>
+          </article>
+
+          <article class="edu" aria-label="FarsEval Benchmark">
+            <div class="head">
+              <h3 class="where">FarsEval: Benchmarking Large Language Models for Persian NLP</h3>
+              <div class="when"><time datetime="2024">May 2024</time> – <time datetime="2025">Apr 2025</time></div>
+            </div>
+            <p style="text-align:justify;">
+              Developing datasets and evaluation metrics for assessing LLM performance in summarization, analogy testing, formality style transfer, and other Persian NLP tasks.
+            </p>
+            <p style="margin-top:6px;">
+              <a href="https://arxiv.org/abs/2504.14690" target="_blank" rel="noopener noreferrer" style="margin-right:8px;text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="" style="width:17px;height:17px;">arXiv</img>
+              </a>
+            <p><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=BVAsKDsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Mehrnoush Shamsfard</a></p>
+            
+        </p>
+          </article>
+
+          <article class="edu" aria-label="Graduate Research — SBU NLP Lab">
+            <div class="head">
+              <h3 class="where">Graduate Research — NLP Lab, Shahid Beheshti University</h3>
+              <div class="when"><time datetime="2022-12">Dec 2022</time> – <time datetime="2024-9">Sep 2024</time></div>
+            </div>
+            <p style="text-align:justify;">
+              Improved <strong>clinical Semantic Textual Similarity (STS)</strong> using metric learning and MeSH ontology. Developed paraphrase-robust language model training strategies to enhance model robustness while managing the trade-off with generalization.
+            </p>
+            <p style="margin-top:6px;">
+              <a href="https://drive.google.com/file/d/1kOTAV5CcJhq2D4bDK38LNl9KbVjxtfe5/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="margin-right:8px;text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="" style="width:17px;height:17px;">Proposal (EN)
+              </a>
+              <a href="https://drive.google.com/file/d/1D2xBkkg0LPzqALJSEpzRPENNenmDPlzI/view" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="" style="width:17px;height:17px;">Thesis (FA)
+              </a>
+            </p>
+            <p><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=BVAsKDsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Mehrnoush Shamsfard</a></p>
+          </article>
+
+          <article class="edu" aria-label="Research Assistant — IROST">
+            <div class="head">
+              <h3 class="where">Research Assistant — Iranian Research Organization for Science and Technology (IROST)</h3>
+              <div class="when"><time datetime="2022-04">Apr 2022</time> – <time datetime="2022-06">Jun 2022</time></div>
+            </div>
+            <p style="text-align:justify;">
+              Researched different <strong>rPPG (Remote Photoplethysmography)</strong> signal extraction methods using videos from the skin at different light wavelengths to map blood flow below the skin, in collaboration with <em>The Color and Visual Computing Laboratory (Colourlab)</em> at the <em>Norwegian University of Science and Technology (NTNU)</em>.
+            </p>
+            <p><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=8VdS96oAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Vahidreza Nafisi</a></p>
+          </article>
+
+          <article class="edu" aria-label="Undergraduate Research — AUT">
+            <div class="head">
+              <h3 class="where">Undergraduate Research — Amirkabir University of Technology</h3>
+              <div class="when"><time datetime="2020-09">Sep 2020</time> – <time datetime="2021-09">Sep 2021</time></div>
+            </div>
+            <p style="text-align:justify;">
+              Estimated the heart rate and mapped blood flow below the skin using videos from facial regions with a non-invasive <strong>rPPG</strong> method. Implemented Region of Interest (ROI) detection (using neural networks, thresholding, and manual selection), extracted signals via average pixel intensity and Independent Component Analysis (ICA), and applied the Fourier Transform to identify the dominant frequency corresponding to the heart rate.
+            </p>
+            <p style="margin-top:6px;">
+              <a href="https://drive.google.com/file/d/1rT8IuDQUG-BEC2bbgAKp4utJfjLqa896/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="text-decoration:none;display:inline-flex;align-items:center;gap:5px;font-size:1.06em;padding:2px 7px;vertical-align:middle;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="" style="width:17px;height:17px;">Thesis (FA)
+              </a>
+            </p>
+            <p><strong>Supervisor:</strong> <a href="https://scholar.google.com/citations?user=8VdS96oAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Vahidreza Nafisi</a></p>
+          </article>
+
+        </section>
+
+        <section id="teaching" class="panel boxed">
+          <h2>Teaching</h2>
+          
+
+            <article class="edu" aria-label="Teaching Assistant — SBU">
+              <div class="head">
+                <h3 class="where">Teaching Assistant — Department of Computer Science &amp; Engineering, Shahid Beheshti University</h3>
+                <div class="when"><time datetime="2024-02">Feb 2024</time> – <time datetime="2024-06">Jun 2024</time></div>
+              </div>
+              <div class="role" style="font-size:0.95em;">Course: Introduction to Machine Learning</div>
+              <div class="meta" style="text-align:justify;">
+                <small>
+                  Instructor: <a href="https://scholar.google.com/citations?user=_IIio8oAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Prof. Hamed Malek</a> ·
+                  Semester: Spring 2024
+                </small>
+              </div>
+            </article>
+
+            <article class="edu" aria-label="Teaching Assistant — AUT (Computer Architecture)">
+              <div class="head">
+                <h3 class="where">Teaching Assistant — Department of Computer Engineering, Amirkabir University of Technology</h3>
+                <div class="when"><time datetime="2022-02">Feb 2022</time> – <time datetime="2022-06">Jun 2022</time></div>
+              </div>
+              <div class="role" style="font-size:0.95em;">Course: Computer Architecture</div>
+              <div class="meta" style="text-align:justify;">
+                <small>
+                  Instructor: <a href="https://scholar.google.com/citations?user=PAZOYiAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Prof. Hamed Farbeh</a> ·
+                  Semester: Spring 2022
+                </small>
+              </div>
+            </article>
+
+            <article class="edu" aria-label="Teaching Assistant — AUT (Microprocessors)">
+              <div class="head">
+                <h3 class="where">Teaching Assistant — Department of Computer Engineering, Amirkabir University of Technology</h3>
+                <div class="when"><time datetime="2019-09">Sep 2019</time> – <time datetime="2020-01">Jan 2020</time></div>
+              </div>
+              <div class="role" style="font-size:0.95em;">Course: Microprocessors and Assembly Language</div>
+              <div class="meta" style="text-align:justify;">
+                <small>
+                  Instructor: <a href="https://scholar.google.com/citations?user=PAZOYiAAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Prof. Hamed Farbeh</a> ·
+                  Semester: Fall 2019
+                </small>
+              </div>
+            </article>
+
+          
+        </section>
+
+<section id="projects" class="panel boxed">
+  <h2>Selected Course Projects</h2>
+  <div class="edu">
+    <ul class="tight">
+
+      <li>
+        Robust FAQ Question Answering using Metric Learning (Angular Loss) and SPARQL-Based Ontology Querying.
+        <span class="btn course" style="--course:#008080">Ontology &amp; Knowledge Engineering</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/FAQ-Ontology" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66 .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27 .68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+        <a class="btn pdf" style="padding:6px 9px;border-radius:10px" href="https://drive.google.com/file/d/1o8GV2zIeXCPyvBZEqiIKwIXxRe1foEO-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="📄" loading="lazy" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"/>Report
+        </a>
+      </li>
+
+      <li>
+        Evaluating Fairness, Backdoor Attack, and Out-Of-Distribution Detection in ResNet18 Image Classification.
+        <span class="btn course" style="--course:#FF00FF">Interpretable AI</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/Fairness-Backdoor-OOD-Detection" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+        <a class="btn pdf" style="padding:6px 9px;border-radius:10px" href="https://drive.google.com/file/d/17-kKOAMbBDDewIjYf3D-kHwBwjNxQM7k/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="📄" loading="lazy" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"/>Report
+        </a>
+      </li>
+
+      <li>
+        Model Interpretation using SHAP for Regression (MLP) and LIME for Image Classification (MobileNet v2).
+        <span class="btn course" style="--course:#FF00FF">Interpretable AI</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/LIME-SHAP-Interpretable-AI" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+        <a class="btn pdf" style="padding:6px 9px;border-radius:10px" href="https://drive.google.com/file/d/1HxKV7nLtW5QYmVqswR4KFYO-LDhBhvAt/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="📄" loading="lazy" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"/>Report
+        </a>
+      </li>
+
+      <li>
+        Enhancing Robustness and Generalization in ResNet18 Classification with Angular Loss on Limited Training Data (20% of CIFAR-10 dataset)
+        <span class="btn course" style="--course:#FF00FF">Interpretable AI</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/Robustness-Generalization-Interpretable-AI" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+        <a class="btn pdf" style="padding:6px 9px;border-radius:10px" href="https://drive.google.com/file/d/1eeMJGc9hbivT2JYX9hW_spXZ2QwaQz-L/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="📄" loading="lazy" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"/>Report
+        </a>
+      </li>
+
+      <li>
+        Question Answering Using Cosine Similarity Between Input Questions and Constructed Sentences over RDF Ontologies (S-P-O).
+        <span class="btn course" style="--course:#008080">Ontology &amp; Knowledge Engineering</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/QA-Subject-Object-Predicate" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+        <a class="btn pdf" style="padding:6px 9px;border-radius:10px" href="https://drive.google.com/file/d/1o8GV2zIeXCPyvBZEqiIKwIXxRe1foEO-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/87/PDF_file_icon.svg" alt="📄" loading="lazy" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"/>Report
+        </a>
+      </li>
+
+      <li>
+        Comparing Performance of Contextual and Static Embeddings in Analogical Reasoning Tasks.
+        <span class="btn course" style="--course:#800000">Natural Language Processing</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/Analogy-NLI-NLP" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+      </li>
+
+      <li>
+        Image Colorization (CNN).
+        <span class="btn course" style="--course:#FFD700">Deep Learning</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/Image-Colorization-with-Convolutional-Neural-Network" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+      </li>
+
+      <li>
+        Tata Steel Stock Price Prediction (HMM).
+        <span class="btn course" style="--course:#E6E6FA">Machine Learning</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/Stock-Price-Prediction-Using-HMM" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+      </li>
+
+      <li>
+        Text Classification on WELFake — BERT &amp; RoBERTa.
+        <span class="btn course" style="--course:#FFD700">Deep Learning</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/FN-Text-Classification" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+      </li>
+
+      <li>
+        Sign Language Image Classification — MLP.
+        <span class="btn course" style="--course:#FFD700">Deep Learning</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/Multi-Layer-Perceptron-for-Image-Classification" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+      </li>
+
+      <li>
+        Human Activity Recognition — CNN-LSTM.
+        <span class="btn course" style="--course:#FF6B6B">Neural Networks</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/Human-Activity-Recognition-with-CNN-LSTM-and-Bi-directional-CNN-LSTM" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+      </li>
+
+      <li>
+        Google Stock Price Prediction — GRU/LSTM.
+        <span class="btn course" style="--course:#FFD700">Deep Learning</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/Google-Stock-Price-Prediction-with-GRU-and-LSTM" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+      </li>
+
+      <li>
+        Earthquake Prediction in Iran.
+        <span class="btn course" style="--course:#E6E6FA">Machine Learning</span>
+        <a class="btn gh" style="padding:6px 9px;border-radius:10px" href="https://github.com/soroushmajd/Earthquake-Prediction-using-Machine-Learning-Techniques" target="_blank" rel="noopener noreferrer me">
+          <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">
+            <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01 .37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53 .63-.01 1.08 .58 1.23 .82 .72 1.21 1.87 .87 2.33 .66 .07-.52 .28-.87 .51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87 .31-1.59 .82-2.15-.08-.2-.36-1.02 .08-2.12 0 0 .67-.21 2.2 .82 .64-.18 1.32-.27 2-.27 .68 0 1.36 .09 2 .27 1.53-1.04 2.2-.82 2.2-.82 .44 1.1 .16 1.92 .08 2.12 .51 .56 .82 1.27 .82 2.15 0 3.07-1.87 3.75-3.65 3.95 .29 .25 .54 .73 .54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21 .15 .46 .55 .38A8.01 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>GitHub
+        </a>
+      </li>
+
+      <li>
+        Baseline Wander Removal in ECG — FIR, IIR, EMD, Moving Avg, Wavelet.
+        <span class="btn course" style="--course:#000000">Digital Signal Processing</span>
+      </li>
+
+      <li>
+        Object Recognition: Humans vs CNNs (Kay et&nbsp;al., 2008).
+        <span class="btn course" style="--course:#40E0D0">Neuromatch Academy</span>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+
+
+        <section id="coursework" class="panel boxed">
+          <h2>Selected Coursework</h2>
+          <div class="edu">
+            <ul class="tight">
+              <li><strong>Interpretable AI</strong> (19.4/20) — Visiting, University of Tehran — <a class="btn pdf" style="padding:6px 9px;border-radius:2px;margin-left:6px" href="https://drive.google.com/file/d/1dYi911ouAiNFxNECo3gVDoxlcq28C965/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img class="icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4d6.svg" alt="📘" loading="lazy" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"/>ABET</a></li>
+              <li><strong>Natural Language Processing</strong> (17/20)</li>
+              <li><strong>Deep Learning</strong> (17.3/20)</li>
+              <li><strong>Machine Learning</strong> (16.8/20)</li>
+              <li><strong>Knowledge &amp; Ontology Engineering</strong> (19.25/20)</li>
+              <li><strong>Principles of Algorithms</strong> (20/20) — Visiting, K. N. Toosi University of Technology</li>
+              <li><strong>Data Structures and Algorithms</strong> (17/20)</li>
+              <li><strong>Digital Signal Processing</strong> (19/20)</li>
+              <li><strong>Pattern Recognition</strong> (16.75/20)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="development" class="panel boxed">
+          <h2>Professional Development</h2>
+          <div class="edu">
+            <ul class="tight">
+              <li><strong>Neuromatch Academy — Deep Learning</strong> <a class="btn pdf" style="padding:6px 9px;border-radius:10px;margin-left:6px" href="https://deeplearning.neuromatch.io/tutorials/intro.html" target="_blank" rel="noopener noreferrer"><img class="icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4d6.svg" alt="📘" loading="lazy" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"/>Syllabus</a> <a class="btn pdf" style="padding:6px 9px;border-radius:10px;margin-left:6px" href="https://portal.neuromatchacademy.org/certificate/34ef0b35-0382-48db-8233-34a4af169671" target="_blank" rel="noopener noreferrer"><img class="icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f3c5.svg" alt="🏅" loading="lazy" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"/>Certificate</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="honors" class="panel boxed">
+          <h2>Honors &amp; Awards</h2>
+          <div class="edu">
+            <ul class="tight">
+              <li>Top <strong>1%</strong> in Iran’s Nationwide University Entrance Exam (Konkour) for Engineering — Rank <strong>963</strong> (Region 1), 2016.</li>
+              <li>Member, National Organization for Development of Exceptional Talents (NODET), Tehran (2012–2016).</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="references" class="panel boxed">
+          <h2>References</h2>
+          <div class="edu">
+            <ul class="tight">
+              <li><strong><a href="https://scholar.google.com/citations?hl=en&user=BVAsKDsAAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer">Mehrnoush Shamsfard</a></strong> — Associate Professor, SBU · m-shams@sbu.ac.ir</li>
+              <li><strong><a href="https://scholar.google.com/citations?user=8VdS96oAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Vahidreza Nafisi</a></strong> — Associate Professor, AUT · vr_nafisi@irost.org</li>
+              <li><strong><a href="https://ceit.aut.ac.ir/~farbeh/" target="_blank" rel="noopener noreferrer">Hamed Farbeh</a></strong> — Assistant Professor, AUT · farbeh@aut.ac.ir</li>
+              <li><strong><a href="https://scholar.google.com/citations?user=BrxRchIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Ahmad Ali Abin</a></strong> — Associate Professor, SBU · a_abin@sbu.ac.ir</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <hr class="rule"/>
+    <footer class="muted" role="contentinfo" style="font-family:var(--ui);">
+      <span>© <span id="y"></span> Soroush Majd,</span>
+      <span>Design inspired by Arya VarastehNejhad,</span>
+      <span>Last updated <time id="lu" datetime=""></time></span>
+    </footer>
+  </div>
+
+  <button id="themeBtn" type="button" aria-label="Toggle theme" title="Switch to night" data-state="day" aria-live="polite">🌗</button>
+  <button id="topBtn" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script>
+    // Footer dates — UK format (e.g., 1 Nov 2025)
+    const yearSpan = document.getElementById('y');
+    yearSpan.textContent = new Date().getFullYear();
+    const updated = '2025-11-01';
+    const t = document.getElementById('lu');
+    t.dateTime = updated;
+    try { t.textContent = new Date(updated).toLocaleString('en-GB', { day:'numeric', month:'short', year:'numeric' }); }
+    catch { t.textContent = updated; }
+
+    const header = document.getElementById('siteHeader');
+
+    function setHeaderHeight(){
+      const h = header.offsetHeight;
+      const gap = parseInt(getComputedStyle(header).top) || 0;
+      document.documentElement.style.setProperty('--header-h', (h + gap + 3) + 'px');
+    }
+
+    // Sticky visual tweaks
+    addEventListener('scroll', () => { header.classList.toggle('scrolled', scrollY > 20); }, {passive:true});
+
+    const topBtn = document.getElementById('topBtn');
+    addEventListener('scroll', () => { topBtn.classList.toggle('show', scrollY > 300); }, {passive:true});
+    topBtn.addEventListener('click', () => scrollTo({top:0, behavior:'smooth'}));
+
+    // ===== Day/Night via 🌗 button only =====
+    const THEME_KEY = 'theme-pref';
+    const themeOrb = document.getElementById('themeBtn');
+
+    function applyTheme(state){
+      document.body.setAttribute('data-theme', state);
+      themeOrb.dataset.state = state;
+      themeOrb.title = state === 'night' ? 'Switch to day' : 'Switch to night';
+      localStorage.setItem(THEME_KEY, state);
+    }
+
+    (function initTheme(){
+      const saved = localStorage.getItem(THEME_KEY);
+      applyTheme(saved || 'night');
+    })();
+
+    themeOrb.addEventListener('click', () => {
+      const next = themeOrb.dataset.state === 'night' ? 'day' : 'night';
+      applyTheme(next);
+      // Theme can change header metrics if fonts/colors cause reflow
+      requestAnimationFrame(() => { setHeaderHeight(); buildSpy(); });
+    });
+
+    addEventListener('load', () => { themeOrb.classList.add('show'); }, {once:true});
+
+    const sections = ['contact','skills','languages','interests','education','publications','research','teaching','projects','coursework','development','honors','references'];
+    const tocMap = Object.fromEntries(sections.map(id => [id, document.getElementById('toc-'+id)]));
+
+    let spy;
+    function buildSpy(){
+      if (spy) spy.disconnect();
+      spy = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting){
+            Object.values(tocMap).forEach(a => { if(a){ a.classList.remove('active'); a.removeAttribute('aria-current'); }});
+            const link = tocMap[entry.target.id];
+            if (link){ link.classList.add('active'); link.setAttribute('aria-current','true'); }
+          }
+        });
+      }, { rootMargin: `calc(-1 * var(--header-h)) 0px -60% 0px`, threshold: 0 });
+      sections.forEach(id => { const el = document.getElementById(id); if (el) spy.observe(el); });
+    }
+
+    // ===== Page scale (safe zoom) =====
+    function applyPageScale(pct = 90) {
+      const z = pct / 100;
+      if (CSS.supports && CSS.supports('zoom', '1')) {
+        document.documentElement.style.zoom = z;  // Chromium/Edge, some Safari
+      } else {
+        // Fallback: scale via root font-size (safer than transforms for sticky/fixed)
+        // This won't affect px paddings/margins, but avoids breaking sticky positioning.
+        const base = 100; // 100%
+        document.documentElement.style.fontSize = (base * z) + '%';
+      }
+    }
+
+    // ===== INIT ORDER MATTERS =====
+    // 1) Scale first, so measurements reflect visual layout
+    applyPageScale(90);
+
+    // 2) After styles & fonts, measure and build observer
+    function measureAndBuild(){
+      setHeaderHeight();
+      buildSpy();
+    }
+
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        requestAnimationFrame(measureAndBuild);
+      });
+    } else {
+      addEventListener('load', () => requestAnimationFrame(measureAndBuild), { once:true });
+    }
+
+    // 3) Keep measurements fresh on resize
+    addEventListener('resize', () => { setHeaderHeight(); buildSpy(); });
+
+  </script>
+
+  
+</body>
+
 </html>

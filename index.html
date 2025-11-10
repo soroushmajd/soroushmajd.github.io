@@ -271,8 +271,8 @@ if (window.matchMedia('(any-pointer: coarse)').matches) {
       opacity:0;pointer-events:none;
       transition:opacity var(--dur-2), background-color var(--dur-2), border-color var(--dur-2);
     }
-    #topBtn{bottom:calc(18px + var(--safe-b));width:44px;height:44px;font-size:18px;display:grid;place-items:center}
-    #themeBtn{bottom:calc(74px + var(--safe-b));width:44px;height:44px;font-size:16px;display:grid;place-items:center}
+    #topBtn{bottom:calc(18px + var(--safe-b));width:74px;height:64px;font-size:30px;display:grid;place-items:center}
+    #themeBtn{bottom:calc(94px + var(--safe-b));width:74px;height:64px;font-size:30px;display:grid;place-items:center}
     #topBtn.show,#themeBtn.show{opacity:1;pointer-events:auto}
 
     @media print{
@@ -1389,7 +1389,7 @@ body[data-theme="night"] #skills .items li {
 
     // ===== INIT ORDER MATTERS =====
     // 1) Scale first, so measurements reflect visual layout
-    applyPageScale(98);
+    applyPageScale(90);
 
     // 2) After styles & fonts, measure and build observer
     function measureAndBuild(){

@@ -180,13 +180,13 @@
 
     .layout{display:grid;grid-template-columns:1fr;gap:20px;margin-top:16px;align-items:start}
     .col{display:grid;gap:18px}
-    @media (min-width:960px){
+    @media (min-width:720px){
   .layout{ grid-template-columns:320px 1fr }
 }
 /* Phones/tablets: touch */
 @media (any-hover: none) and (any-pointer: coarse){
   .page{ min-width: auto; }
-  
+  /* .layout{ grid-template-columns: 1fr; } */
 }
 if (window.matchMedia('(any-pointer: coarse)').matches) {
   document.documentElement.classList.add('touch');
@@ -271,8 +271,8 @@ if (window.matchMedia('(any-pointer: coarse)').matches) {
       opacity:0;pointer-events:none;
       transition:opacity var(--dur-2), background-color var(--dur-2), border-color var(--dur-2);
     }
-    #topBtn{bottom:calc(18px + var(--safe-b));width:74px;height:64px;font-size:35px;display:grid;place-items:center}
-    #themeBtn{bottom:calc(94px + var(--safe-b));width:74px;height:64px;font-size:35px;display:grid;place-items:center}
+    #topBtn{bottom:calc(18px + var(--safe-b));width:74px;height:64px;font-size:30px;display:grid;place-items:center}
+    #themeBtn{bottom:calc(94px + var(--safe-b));width:74px;height:64px;font-size:30px;display:grid;place-items:center}
     #topBtn.show,#themeBtn.show{opacity:1;pointer-events:auto}
 
     @media print{
@@ -661,7 +661,7 @@ body[data-theme="night"] #skills .items li {
               GitHub
             </a>
 
-            <a class="btn li block" href="https://www.linkedin.com/in/soroush-majd-7a5700187/?originalSubdomain=ir" target="_blank" rel="me noopener noreferrer">
+            <a class="btn li block" href="https://www.linkedin.com/in/soroush-majd/" target="_blank" rel="me noopener noreferrer">
               <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="" loading="lazy"/> LinkedIn
             </a>
             <a class="btn tg block" href="https://t.me/SoroushMajd" target="_blank" rel="noopener noreferrer">
@@ -1301,6 +1301,11 @@ body[data-theme="night"] #skills .items li {
       <span>Design inspired by Arya VarastehNejhad,</span>
       <span>Last updated <time id="lu" datetime=""></time></span>
     </footer>
+    <div hidden aria-hidden="true">
+  <script type="text/javascript" id="clustrmaps"
+    src="//clustrmaps.com/map_v2.js?d=wE8H15Ij15ItKyECBs-J2HHCn8LkfqCzKK-deq-fGyI&cl=ffffff&w=a">
+  </script>
+</div>
   </div>
 
   <button id="themeBtn" type="button" aria-label="Toggle theme" title="Switch to night" data-state="day" aria-live="polite">🌗</button>
